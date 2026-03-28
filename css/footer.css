@@ -1,0 +1,82 @@
+
+
+         #rs-footer{
+  background:#121212;
+  border-top:1px solid #2a2a2a;
+  color:#e5e5e5;
+}
+
+#rs-footer p{
+  font-size:14px;
+  color:#bdbdbd;
+}
+
+.footer-heading{
+  color:#ffffff;
+  margin-bottom:15px;
+  font-size:18px;
+}
+
+.footer-menu{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.footer-menu li{
+  margin-bottom:8px;
+}
+
+/* Footer Links */
+.footer-menu a{
+  color:#cfcfcf;
+  text-decoration:none;
+  transition:all 0.3s ease;
+  display:inline-block;
+}
+
+.footer-menu a:hover{
+  color:#8f4e00;   /* same as button color */
+  transform:translateX(-6px); /* move LEFT */
+}
+
+
+/* Button */
+.footer-btn{
+  display:inline-block;
+  background:#8f4e00;
+  color:#fff;
+  padding:4px 80px; /* fixed padding */
+  font-size:14px;
+  border-radius:4px;
+  text-decoration:none;
+  transition:background 0.3s ease;
+}
+
+.footer-btn:hover{
+  background:#6d3a00;
+  color:#fff;
+}
+
+
+/* Bottom Bar */
+.footer-bottom{
+  border-top:1px solid #2a2a2a;
+  padding:12px;
+  text-align:center;
+}
+
+
+
+.footer-bottom p{
+  margin:0;
+  font-size:14px;
+  color:#9a9a9a;
+  transition:all 0.3s ease;
+  cursor:default;
+}
+
+.footer-bottom p:hover{
+  color:#8f4e00;   /* same color as your button */
+  letter-spacing:0.5px;
+}

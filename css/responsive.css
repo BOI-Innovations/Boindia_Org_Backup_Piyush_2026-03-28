@@ -35,7 +35,7 @@
 
 @media only screen and (max-width: 1199px) {
 	#rs-header .menu-area.rs-defult-header .main-menu{
-        padding-right: 75px;
+        padding-right: 60px;
     }
     .container {
         padding-left: 15px;
@@ -183,7 +183,7 @@
         animation-fill-mode: both;
     }
     .full-width-header .rs-header .menu-area .main-menu .rs-menu {
-        padding-right: 84px;
+        padding-right: 60px;
     }
 }
 /* Layout: Min 768px Max 1199px. */
