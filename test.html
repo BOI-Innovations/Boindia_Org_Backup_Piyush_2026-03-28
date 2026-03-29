@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+   <head>
+      <meta charset="utf-8"/>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+      <title>Brahmin Organisation of India (BOI)</title>
+      <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+      <script id="tailwind-config">
+         tailwind.config = {
+           darkMode: "class",
+           theme: {
+             extend: {
+               colors: {
+                 "on-secondary-fixed-variant": "#544600",
+                 "surface-tint": "#8f4e00",
+                 "on-secondary-container": "#6e5c00",
+                 "primary-container": "#ff9933",
+                 "surface-dim": "#dbdcc3",
+                 "surface-container": "#efefd7",
+                 "on-tertiary-fixed-variant": "#753401",
+                 "secondary-fixed": "#ffe16d",
+                 "primary": "#8f4e00",
+                 "inverse-surface": "#303221",
+                 "on-secondary": "#ffffff",
+                 "on-error-container": "#93000a",
+                 "primary-fixed-dim": "#ffb77a",
+                 "surface-bright": "#fbfbe2",
+                 "on-error": "#ffffff",
+                 "on-surface": "#1b1d0e",
+                 "tertiary-fixed": "#ffdbc9",
+                 "tertiary-container": "#f79b62",
+                 "background": "#fbfbe2",
+                 "on-primary-fixed-variant": "#6d3a00",
+                 "outline": "#887364",
+                 "secondary-container": "#fcd400",
+                 "surface-container-highest": "#e4e4cc",
+                 "error": "#ba1a1a",
+                 "surface-container-low": "#f5f5dc",
+                 "tertiary-fixed-dim": "#ffb68c",
+                 "on-tertiary-fixed": "#321200",
+                 "primary-fixed": "#ffdcc2",
+                 "secondary-fixed-dim": "#e9c400",
+                 "secondary": "#705d00",
+                 "on-tertiary": "#ffffff",
+                 "on-primary-fixed": "#2e1500",
+                 "on-primary": "#ffffff",
+                 "tertiary": "#934b19",
+                 "on-background": "#1b1d0e",
+                 "surface-variant": "#e4e4cc",
+                 "error-container": "#ffdad6",
+                 "surface-container-high": "#eaead1",
+                 "surface": "#fbfbe2",
+                 "inverse-on-surface": "#f2f2d9",
+                 "on-primary-container": "#693800",
+                 "on-secondary-fixed": "#221b00",
+                 "surface-container-lowest": "#ffffff",
+                 "on-tertiary-container": "#713200",
+                 "inverse-primary": "#ffb77a",
+                 "outline-variant": "#dbc2b0",
+                 "on-surface-variant": "#554336"
+               },
+               fontFamily: {
+                 "headline": ["Noto Serif"],
+                 "body": ["Manrope"],
+                 "label": ["Manrope"]
+               },
+               borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+             },
+           },
+         }
+      </script>
+      <style>
+         .material-symbols-outlined {
+         font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+         }
+         .editorial-shadow {
+         box-shadow: 0 32px 48px -12px rgba(27, 29, 14, 0.04);
+         }
+         .glass-nav {
+         background-color: rgba(251, 251, 226, 0.8);
+         backdrop-filter: blur(20px);
+         }
+      </style>
+   </head>
+   <body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+      <!-- TopNavBar Implementation -->
+      <nav class="fixed top-0 w-full z-50 glass-nav shadow-sm dark:shadow-none">
+         <div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+            <div class="font-['Noto_Serif'] text-2xl font-black text-[#8f4e00] dark:text-[#ff9933] uppercase tracking-widest">BOI</div>
+            <div class="hidden md:flex items-center space-x-8 font-['Noto_Serif'] font-bold tracking-tight text-lg">
+               <a class="text-[#8f4e00] dark:text-[#ff9933] border-b-2 border-[#8f4e00] dark:border-[#ff9933] pb-1" href="#">Home</a>
+               <a class="text-[#1b1d0e] dark:text-stone-300 hover:text-[#8f4e00] transition-colors" href="#">About</a>
+               <a class="text-[#1b1d0e] dark:text-stone-300 hover:text-[#8f4e00] transition-colors" href="#">Community</a>
+               <a class="text-[#1b1d0e] dark:text-stone-300 hover:text-[#8f4e00] transition-colors" href="#">Events</a>
+               <a class="text-[#1b1d0e] dark:text-stone-300 hover:text-[#8f4e00] transition-colors" href="#">Blog</a>
+               <a class="text-[#1b1d0e] dark:text-stone-300 hover:text-[#8f4e00] transition-colors" href="#">Membership</a>
+            </div>
+            <div class="flex items-center space-x-4">
+               <button class="hidden lg:block bg-surface-container-highest text-primary px-6 py-2 rounded-lg font-medium hover:opacity-80 transition-all duration-300 active:scale-95">Donate</button>
+               <button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-medium hover:opacity-80 transition-all duration-300 active:scale-95 shadow-md">Join Community</button>
+            </div>
+         </div>
+      </nav>
+      <!-- Hero Section -->
+      <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+         <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover" data-alt="Majestic ancient Vedic temple architecture at sunrise with warm golden light rays and mystical atmospheric haze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW0hsKQ8Ggd0gOU6zsjQfbajwrjtm0pvAkf_cvLcfOuxtQrc2fFTpdohfHevjAq4-gE1onCpekPx6GpY8ROoDa1Uywhsm6Hw3KXZQpUMpJzWqINzUe76dPQ-DtlqfLnyJog1BUOU_rtOl-UJYU5dUX5z_1OIZk2tdcRW-xWWk8QKXTX1cmndLG6MB5Ko0F0ZvkXEAkXQ4gK4qnUU1Om9RBz4qVvpxl7Yb-23fDG3HMhs35EEpWLEve0tZkWJMKTqbKrwsL7uAZS1AW"/>
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>
+         </div>
+         <div class="relative z-10 max-w-7xl mx-auto px-8 w-full pt-20">
+            <div class="max-w-3xl space-y-8">
+               <div class="inline-block px-4 py-1.5 rounded-full bg-primary-container/20 border border-primary-container/30 text-on-primary-container backdrop-blur-md">
+                  <span class="text-sm font-bold tracking-wider uppercase">Vibrant Global Brahmin Community</span>
+               </div>
+               <h1 class="font-headline font-black text-6xl md:text-8xl text-on-primary tracking-tight leading-[1.1]">
+                  Brahmin Organisation <br/> <span class="text-primary-container">of India</span>
+               </h1>
+               <p class="text-xl md:text-2xl text-on-primary/90 font-medium max-w-xl leading-relaxed">
+                  Unit of Bhagwan Parshuram Brahmin Charitable Trust (80G/12A). Preserving heritage, empowering futures.
+               </p>
+               <div class="flex flex-wrap gap-4 pt-4">
+                  <button class="bg-primary-container text-on-primary-container px-10 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:-translate-y-1 transition-all active:scale-95">Join Community</button>
+                  <button class="bg-surface/10 backdrop-blur-md border border-surface/30 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-surface/20 transition-all active:scale-95">Learn More</button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- About Section -->
+      <section class="py-32 px-8 bg-surface">
+         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="relative order-2 lg:order-1">
+               <div class="aspect-[4/5] rounded-xl overflow-hidden editorial-shadow">
+                  <img class="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700" data-alt="Handwritten ancient Sanskrit manuscripts on palm leaves and handmade paper with marigold flowers and ritual artifacts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7tMpSScO2gbzCS1oAGl82BETRNhkGFfFkTFu3P-BmGTtYxkZtIXRLRy3mXfVBQYjox_ohl7DH1T00qOGZBsIgXaff4J9ZUqa-fm32mdrSSLzM9GM6Qk33-FYnYbwH8zgzEMbXcQeAW-P7VV0YKeLdXgEZmkge4ku7ffFQIS0DFcMwbWq65-pM-INkcdwTp0yX2m_CHFobgjaF-B-OhRNCg9MuN0cxbGw1ZtxP7EjCd3dE12l7Ib7U9G0rppGoDpEb9FHG3KiQPRCc"/>
+               </div>
+               <div class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary-container rounded-lg -z-10 opacity-20"></div>
+            </div>
+            <div class="space-y-8 order-1 lg:order-2">
+               <h2 class="font-headline text-5xl font-bold text-on-surface tracking-tight">About Brahmin Organisation of India</h2>
+               <div class="w-20 h-1.5 bg-primary-container rounded-full"></div>
+               <p class="text-lg leading-relaxed text-on-surface-variant">
+                  The Brahmin Organisation of India (BOI) stands as a beacon for the preservation of Vedic culture and the socio-economic upliftment of the community. As a dedicated unit of the Bhagwan Parshuram Brahmin Charitable Trust, we bridge the gap between ancient wisdom and modern aspirations.
+               </p>
+               <p class="text-lg leading-relaxed text-on-surface-variant">
+                  Our journey is rooted in the timeless principles of 'Dharma' and 'Seva', fostering a space where traditions are honored, education is prioritized, and every community member finds a supportive network for growth.
+               </p>
+               <button class="inline-flex items-center gap-2 text-primary font-bold text-lg group">
+               Read More 
+               <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+               </button>
+            </div>
+         </div>
+      </section>
+      <!-- Mission & Values (Bento Grid Style) -->
+      <section class="py-32 px-8 bg-surface-container-low">
+         <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center space-y-4">
+               <h2 class="font-headline text-5xl font-bold tracking-tight">Our Mission &amp; Core Values</h2>
+               <p class="text-on-surface-variant max-w-2xl mx-auto text-lg">Guided by the lineage of Bhagwan Parshuram, we strive for collective prosperity.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+               <!-- Value Card 1 -->
+               <div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow hover:bg-surface-container-high transition-all group">
+                  <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                     <span class="material-symbols-outlined text-3xl" data-icon="temple_hindu">temple_hindu</span>
+                  </div>
+                  <h3 class="text-xl font-bold mb-4">Cultural Preservation</h3>
+                  <p class="text-on-surface-variant leading-relaxed">Safeguarding the sacred rituals, Vedas, and traditions that define our spiritual identity.</p>
+               </div>
+               <!-- Value Card 2 -->
+               <div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow hover:bg-surface-container-high transition-all group">
+                  <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                     <span class="material-symbols-outlined text-3xl" data-icon="school">school</span>
+                  </div>
+                  <h3 class="text-xl font-bold mb-4">Youth Education</h3>
+                  <p class="text-on-surface-variant leading-relaxed">Providing scholarships and mentorship to empower the next generation of scholars.</p>
+               </div>
+               <!-- Value Card 3 -->
+               <div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow hover:bg-surface-container-high transition-all group">
+                  <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                     <span class="material-symbols-outlined text-3xl" data-icon="groups">groups</span>
+                  </div>
+                  <h3 class="text-xl font-bold mb-4">Community Collaboration</h3>
+                  <p class="text-on-surface-variant leading-relaxed">Building a global network for professional and social mutual support among members.</p>
+               </div>
+               <!-- Value Card 4 -->
+               <div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow hover:bg-surface-container-high transition-all group">
+                  <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                     <span class="material-symbols-outlined text-3xl" data-icon="volunteer_activism">volunteer_activism</span>
+                  </div>
+                  <h3 class="text-xl font-bold mb-4">Social Service</h3>
+                  <p class="text-on-surface-variant leading-relaxed">Dedicated charitable initiatives focused on healthcare and disaster relief for the needy.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Events Section -->
+      <section class="py-32 px-8 bg-surface">
+         <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
+               <div class="space-y-4">
+                  <h2 class="font-headline text-5xl font-bold tracking-tight">Community Activities</h2>
+                  <p class="text-on-surface-variant text-lg">Mark your calendars for our upcoming spiritual and social gatherings.</p>
+               </div>
+               <a class="text-primary font-bold flex items-center gap-2 hover:underline" href="#">
+               View All Events <span class="material-symbols-outlined">chevron_right</span>
+               </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+               <!-- Event 1 -->
+               <div class="bg-surface-container rounded-xl overflow-hidden transition-all hover:-translate-y-2">
+                  <div class="h-64 relative">
+                     <img class="w-full h-full object-cover" data-alt="Traditional Havan ritual with sacred fire and priests offering oblations in an ornate temple courtyard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoH9fso_TTVTRII6w2GtLrMUyoGQzTya9YaLnhXxxbC42GFZBMgEwZc-aowQ1opQvhPobN_n03cBr0Xu6-6Rgp6ta7oRtKkXAQxfi4fsYgsP784BUfd92vjwQyruSBGqClap1hYfPDFEf6AbTBomgSACvbu4qFOoFqNDIe5DTiiTEP8eVA_ZlbMEwHFKJkRohFSRH9hWMHzWNudY_fa369UTUuCRcUcKuCI295bLGIHNHrTnZtdPLFZH7xg7BNAp6DIK-ejzCr_XCm"/>
+                     <div class="absolute top-4 left-4 bg-primary-container text-on-primary-container font-bold px-4 py-2 rounded-lg text-sm">MAR 15</div>
+                  </div>
+                  <div class="p-8 space-y-4">
+                     <h3 class="text-2xl font-bold tracking-tight">Maha Mrityunjaya Jaap</h3>
+                     <p class="text-on-surface-variant">Join us for the collective chanting for universal peace and prosperity at the BOI Center.</p>
+                     <button class="bg-primary/10 text-primary w-full py-3 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-colors">View Details</button>
+                  </div>
+               </div>
+               <!-- Event 2 -->
+               <div class="bg-surface-container rounded-xl overflow-hidden transition-all hover:-translate-y-2">
+                  <div class="h-64 relative">
+                     <img class="w-full h-full object-cover" data-alt="Enthusiastic young students in traditional ethnic wear attending a cultural workshop in a bright hall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx-sj3bmTH92k50hOyp4KMgbYAGm2QCUDTb5a7rC1cnaxjevxszyi3aYkMdqTeQOd8DOJbGwcmu0cMRZ6rB973ZXrj1LuP_v6amaBOB8OtcVhnrEQIgtvSaZtIJDSW3deo4oUhg1tyVMlXQ6kO0FdfsAngIkzL9U17wpMD23RCHyLgBkV0J25CcQBuP82H5-TUP5YmdUcZhWEZaAxnhTvBTNyo-RpZCKVLaW986f9cK1KfmZSovXhMumusa_L-59k82Z8rHi3FNRcc"/>
+                     <div class="absolute top-4 left-4 bg-primary-container text-on-primary-container font-bold px-4 py-2 rounded-lg text-sm">APR 02</div>
+                  </div>
+                  <div class="p-8 space-y-4">
+                     <h3 class="text-2xl font-bold tracking-tight">Youth Heritage Summit</h3>
+                     <p class="text-on-surface-variant">A convention for young Brahmins to explore professional networking and heritage education.</p>
+                     <button class="bg-primary/10 text-primary w-full py-3 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-colors">View Details</button>
+                  </div>
+               </div>
+               <!-- Event 3 -->
+               <div class="bg-surface-container rounded-xl overflow-hidden transition-all hover:-translate-y-2">
+                  <div class="h-64 relative">
+                     <img class="w-full h-full object-cover" data-alt="Community service camp with volunteers distributing warm meals and supplies to elderly citizens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5Tn9jW1jpCJrpjhD-KddOLstd681kvX7sRcuUdZvceyHzHbsleOLLM3UTteMwDpTZopEzBwD-KHX7ryxCoEk-KJyfS5JXCSIj9M-bE_-NfvWLNCbJiW9KAs_qO3PyO9j3iMzPGdnT2z8BCqclDXqBlj8MRNUG1cjPz5Vk8OZlZ82SSv6z2r3Iru9Snim7xyTzOHEfqGvdwM7D11PYjL_TrY8XbVwIGLY8iECTNXS6IraRqNRQyPSclc0xt4KgD8kQFJ8ropzrltpp"/>
+                     <div class="absolute top-4 left-4 bg-primary-container text-on-primary-container font-bold px-4 py-2 rounded-lg text-sm">MAY 12</div>
+                  </div>
+                  <div class="p-8 space-y-4">
+                     <h3 class="text-2xl font-bold tracking-tight">Social Welfare Drive</h3>
+                     <p class="text-on-surface-variant">Medical health check-up camp and educational kit distribution for underprivileged families.</p>
+                     <button class="bg-primary/10 text-primary w-full py-3 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-colors">View Details</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Blog Section -->
+      <section class="py-32 px-8 bg-surface-container-lowest">
+         <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 space-y-4">
+               <h2 class="font-headline text-5xl font-bold tracking-tight">Blog &amp; Insights</h2>
+               <div class="w-24 h-1.5 bg-primary mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+               <!-- Blog 1 -->
+               <article class="group">
+                  <div class="aspect-video rounded-xl overflow-hidden mb-6">
+                     <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Soft morning light illuminating a stack of ancient spiritual books with a cup of tea on a rustic wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDwTk_6TbKOHxslImPpbbJMTJ48vJFOAoWtI1xOjjbI6BHA3o8eSJc-i-ueYSAAkNA2xaRo0ZTN3taRgxsVO9WHLHpb2atxeTDRWuO0NX5e8MVkACv6KvVxyJQfo3a8wNlQ2389UpvCfrqzebG9jviYJanLj0Qc3N6w9mUYdXHKHTU7ofczAW7_hszpRJSlEZVpzNRZ5COUqX1zXSsW9yZgXsrCqC-Wy0m422wEKJF82CI6nu8Teexqdad5AIxVQbQq3hoLx2Xs4Qq"/>
+                  </div>
+                  <div class="space-y-3">
+                     <span class="text-sm font-bold text-primary tracking-widest uppercase">Philosophy</span>
+                     <h3 class="text-2xl font-bold group-hover:text-primary transition-colors">The Relevance of Vedas in the 21st Century</h3>
+                     <p class="text-on-surface-variant line-clamp-2">How ancient wisdom provides solutions for modern-day stress and ethical dilemmas in our daily lives.</p>
+                     <a class="inline-block text-primary font-bold border-b-2 border-transparent hover:border-primary pt-2 transition-all" href="#">Read More</a>
+                  </div>
+               </article>
+               <!-- Blog 2 -->
+               <article class="group">
+                  <div class="aspect-video rounded-xl overflow-hidden mb-6">
+                     <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Beautifully prepared vegetarian sattvic thali with various traditional Indian dishes served on a silver plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClL8pdi8Pauz97BZNP7haKivCt4u4Gf6KC7TO5bHCgIGdBAMRp_piiEGgiUNWFUD_g1SRSFEaL0utNLsna6zMxlV0piAzyEaE-sfy3MvtzhG9DAY7Mb-_esfdniT9ND6d34nmV1F2Km_awngN8YKtH-GdILJh6y4_GTgETgEFgQkaM56Ka1k7BGhvuby3QyTmdeixbm3kEku49nf_dzmiEiCWPC5fn94Woso7_8rhgVLqelT7Fz4ItnLvSlQwxMwAh7fWr5_VwJDbU"/>
+                  </div>
+                  <div class="space-y-3">
+                     <span class="text-sm font-bold text-primary tracking-widest uppercase">Lifestyle</span>
+                     <h3 class="text-2xl font-bold group-hover:text-primary transition-colors">Sattvic Living: A Path to Mental Clarity</h3>
+                     <p class="text-on-surface-variant line-clamp-2">Exploring the dietary and lifestyle habits that promote spiritual growth and emotional balance.</p>
+                     <a class="inline-block text-primary font-bold border-b-2 border-transparent hover:border-primary pt-2 transition-all" href="#">Read More</a>
+                  </div>
+               </article>
+               <!-- Blog 3 -->
+               <article class="group">
+                  <div class="aspect-video rounded-xl overflow-hidden mb-6">
+                     <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Minimalist study area with a candle, a laptop, and small clay lamps representing modern learning and tradition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUtz-eTCtDeDjqjOAq4KmqbWJEWfHvF0q8DrxXwu5WDKjdbfLt8Yx43J8yPyEIwgjcgfHXjEe2unfb8AiGaqKMzWTUX6cwUN5Q__Wlv0vZnd6qndA4-i1CWzjI5Yh68-L4kazL2oE_QjfqW1tTZGKkSHLOEzCeMX0J8mc2MPjpEJE6ivoUqmn6ZzGOgEik_vQCXmrWV8ikRr9-JEHaALOrJP0iW57Pc3rQgz81aqyT9EEVaszTo2P8bvqpF53cGjTZCT3TDdqyBmXy"/>
+                  </div>
+                  <div class="space-y-3">
+                     <span class="text-sm font-bold text-primary tracking-widest uppercase">Community</span>
+                     <h3 class="text-2xl font-bold group-hover:text-primary transition-colors">Profiles in Excellence: BOI Members</h3>
+                     <p class="text-on-surface-variant line-clamp-2">Celebrating the professional achievements of our community members across science and arts.</p>
+                     <a class="inline-block text-primary font-bold border-b-2 border-transparent hover:border-primary pt-2 transition-all" href="#">Read More</a>
+                  </div>
+               </article>
+            </div>
+         </div>
+      </section>
+      <!-- Call to Action -->
+      <section class="relative py-24 mx-8 my-32 rounded-3xl overflow-hidden">
+         <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover" data-alt="Soft focus image of an ancient banyan tree with sunlight filtering through leaves, symbolizing growth and tradition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3-bJHO5Cg_uaCoBcZ5boexNM4lzXPdnPza5i4tweehsUJL0p_KlgSUr1f2-qh_wgIvMR6NwvReirWj5r-_JU93zbTaaX9m_s5yVhWZivdJ8wjYNJgreITXg8ZzcqLYKxpCJtFXFKZpNrWFZrRMvtTVix42XBXHoP9ItGdL8gAaOFEhAJqNqR4nTVf6_XPfUqsYW3YhEwKpQDhDotMaRH2XdymvTZtGmp1dCzU8K3O20TctpUM2neW-UvJWsYzpLfLZVX6LMby0Aut"/>
+            <div class="absolute inset-0 bg-primary/90 mix-blend-multiply"></div>
+         </div>
+         <div class="relative z-10 max-w-4xl mx-auto text-center px-8">
+            <h2 class="font-headline text-5xl md:text-6xl font-black text-on-primary mb-8 tracking-tight">Join the BOI Community</h2>
+            <p class="text-xl text-on-primary/80 mb-12 font-medium">Be part of a legacy. Contribute to our heritage and grow with a global family of like-minded individuals.</p>
+            <button class="bg-primary-container text-on-primary-container px-12 py-5 rounded-lg font-black text-xl hover:shadow-2xl hover:scale-105 transition-all">Become a Member</button>
+         </div>
+      </section>
+      <!-- Footer Implementation -->
+      <footer class="bg-surface-container-low dark:bg-stone-950 w-full border-t border-[#dbc2b0]/15">
+         <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 max-w-7xl mx-auto">
+            <div class="space-y-6">
+               <div class="font-['Noto_Serif'] text-xl font-bold text-[#1b1d0e] dark:text-stone-100 uppercase tracking-widest">BOI</div>
+               <p class="font-['Manrope'] text-sm leading-relaxed text-[#1b1d0e]/70 dark:text-stone-400">
+                  Preserving the Vedic identity and empowering the global Brahmin community through education, service, and collaboration.
+               </p>
+               <div class="flex space-x-4">
+                  <!-- Social icons would go here -->
+               </div>
+            </div>
+            <div class="space-y-6">
+               <h4 class="font-headline text-lg font-bold">Quick Links</h4>
+               <ul class="space-y-3 font-['Manrope'] text-sm">
+                  <li><a class="text-[#1b1d0e]/70 dark:text-stone-400 hover:text-[#8f4e00] transition-colors" href="#">About Us</a></li>
+                  <li><a class="text-[#1b1d0e]/70 dark:text-stone-400 hover:text-[#8f4e00] transition-colors" href="#">Community</a></li>
+                  <li><a class="text-[#1b1d0e]/70 dark:text-stone-400 hover:text-[#8f4e00] transition-colors" href="#">Events</a></li>
+                  <li><a class="text-[#1b1d0e]/70 dark:text-stone-400 hover:text-[#8f4e00] transition-colors" href="#">Membership</a></li>
+               </ul>
+            </div>
+            <div class="space-y-6">
+               <h4 class="font-headline text-lg font-bold">Resources</h4>
+               <ul class="space-y-3 font-['Manrope'] text-sm">
+                  <li><a class="text-[#1b1d0e]/70 dark:text-stone-400 hover:text-[#8f4e00] transition-colors" href="#">Privacy Policy</a></li>
+                  <li><a class="text-[#1b1d0e]/70 dark:text-stone-400 hover:text-[#8f4e00] transition-colors" href="#">Terms of Service</a></li>
+                  <li><a class="text-[#1b1d0e]/70 dark:text-stone-400 hover:text-[#8f4e00] transition-colors" href="#">Volunteer</a></li>
+                  <li><a class="text-[#1b1d0e]/70 dark:text-stone-400 hover:text-[#8f4e00] transition-colors" href="#">Donate Now</a></li>
+               </ul>
+            </div>
+            <div class="space-y-6">
+               <h4 class="font-headline text-lg font-bold">Connect</h4>
+               <p class="font-['Manrope'] text-sm text-[#1b1d0e]/70 dark:text-stone-400">Unit of Bhagwan Parshuram Brahmin Charitable Trust</p>
+               <p class="font-['Manrope'] text-sm text-[#1b1d0e]/70 dark:text-stone-400">Email: contact@boi.org</p>
+               <button class="bg-primary text-on-primary w-full py-2 rounded font-bold text-sm">Contact Us</button>
+            </div>
+         </div>
+         <div class="max-w-7xl mx-auto px-12 py-8 border-t border-[#dbc2b0]/10 text-center">
+            <p class="font-['Manrope'] text-sm text-[#1b1d0e]/50 dark:text-stone-500">
+               © 2024 Brahmin Organisation of India. All Rights Reserved.
+            </p>
+         </div>
+      </footer>
+   </body>
+</html>

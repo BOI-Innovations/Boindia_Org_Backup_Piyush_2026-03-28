@@ -23,42 +23,10 @@
       <link rel="stylesheet" type="text/css" href="style.css">
       <link rel="stylesheet" type="text/css" href="css/responsive.css">
       <script src="https://kit.fontawesome.com/704a8664d3.js" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
       <link rel="stylesheet" href="./css/footer.css">
       <style>
-         /* Social Header Styles */
-         .full-width-header.top-social-bar {
-         text-align: right;
-         background: #2d1a0a;
-         padding: 5px 15px;
-         }
-         .social-links-header a {
-         padding: 8px 12px;
-         color: white;
-         display: inline-block;
-         transition: opacity 0.3s;
-         }
-         .social-links-header a:hover {
-         opacity: 0.8;
-         }
-         /* Top Header Social Icons - Circle Background on Hover */
-         .full-width-header.top-social-bar .social-links-header a {
-         transition: all 0.3s ease;
-         display: inline-block;
-         padding: 8px 12px;
-         border-radius: 50%;
-         width: 36px;
-         height: 36px;
-         line-height: 36px;
-         text-align: center;
-         padding: 0;
-         margin: 0 3px;
-         }
-         .full-width-header.top-social-bar .social-links-header a:hover {
-         background-color: #8f4e00;
-         color: #fff;
-         transform: translateY(-2px);
-         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-         }
+
          /* Contact Form Slideout */
          #contactform {
          width: 300px;
@@ -107,7 +75,6 @@
          width: 100%;
          object-fit: cover;
          }
-         
          /* Service Box Styles */
          .service-box {
          text-align: center;
@@ -146,8 +113,150 @@
          .pl-30 {
          padding-left: 15px;
          }
-      }
+         }
+/* Section Styling */
+.mission-section {
+    background: #f9fafc;
+}
 
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.value-card {
+    background: #ffffff;
+    padding: 25px 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+
+    /* FIX */
+    text-align: left;
+    display: block;   /* ❌ remove flex */
+    height: auto;     /* ❌ remove 100% */
+}
+
+.value-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon Box */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff7a18, #ffb347);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-box .material-symbols-outlined {
+    font-size: 28px;
+    color: #fff;
+}
+
+/* Card Titles */
+.value-card h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+/* Card Text */
+.value-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .mission-section {
+        padding-top: 50px !important;
+    }
+}
+
+.cta-section {
+    position: relative;
+    margin: 40px 20px;
+    padding: 80px 40px; /* ensures spacing inside image */
+    border-radius: 20px;
+    overflow: hidden;
+
+    /* Background image with overlay */
+     background: 
+        linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.1) 100%), /* overlay */
+        url('images/banner/commonHero.png') no-repeat center center; /* image */
+    background-size: cover;
+    background-blend-mode: multiply; /* ensures overlay blends with image */
+}
+
+/* Content */
+.cta-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Title */
+.cta-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+/* Text */
+.cta-text {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.85);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Button */
+.cta-btn {
+   
+    background: linear-gradient(135deg, #ff7a18, #ffb347);
+    padding: 10px 35px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: none;
+    color: white;
+}
+
+.cta-btn:hover {
+    background: linear-gradient(135deg, #ff7a18, #e29a35);
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cta-section {
+        padding: 60px 20px;
+    }
+
+    .cta-title {
+        font-size: 2rem;
+    }
+}
+         
       </style>
    </head>
    <body>
@@ -162,20 +271,6 @@
             </li>
          </ul>
       </div>
-      <!-- WhatsApp Widget Script -->
-      <script type="text/javascript">
-         (function () {
-             var options = {
-                 whatsapp: "+919811424141",
-                 call_to_action: "Message us",
-                 position: "left",
-             };
-             var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-             var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-             s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-             var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-         })();
-      </script>
       <!-- Header Area -->
       <div class="full-width-header header-transparent">
          <header id="rs-header" class="rs-header">
@@ -208,101 +303,45 @@
                   </div>
                </div>
             </div>
-            <!-- Slideout Contact Form -->
-            <div id="contactform">
-               <div id="contact-button">
-                  <div class="rotated-text">
-                     <img src="images/enquiry now.png" alt="Enquiry Now">
-                  </div>
-               </div>
-               <form id="slideout-form">
-                  <div class="form-group" style="margin-left: 20px;">
-                     <label for="contactName">Name</label>
-                     <input type="text" class="form-control" id="contactName" name="name" required>
-                  </div>
-                  <div class="form-group" style="margin-left: 20px;">
-                     <label for="contactEmail">Email address</label>
-                     <input type="email" class="form-control" id="contactEmail" name="email" required>
-                  </div>
-                  <div class="form-group" style="margin-left: 20px;">
-                     <label for="contactMobile">Mobile No</label>
-                     <input type="tel" class="form-control" id="contactMobile" name="mobile">
-                  </div>
-                  <div class="form-group" style="margin-left: 20px;">
-                     <label for="contactGotras">Gotras</label>
-                     <input type="text" class="form-control" id="contactGotras" name="gotras">
-                  </div>
-                  <div class="form-group" style="margin-left: 20px;">
-                     <label for="contactMessage">Message</label>
-                     <textarea class="form-control" id="contactMessage" name="message" rows="3"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-submit">Submit</button>
-               </form>
-            </div>
-            <script>
-               var easeOutBounce = function (x, t, b, c, d) {
-                   if ((t /= d) < (1 / 2.75)) {
-                       return c * (7.5625 * t * t) + b;
-                   } else if (t < (2 / 2.75)) {
-                       return c * (7.5625 * (t -= (1.5 / 2.75)) * t + .75) + b;
-                   } else if (t < (2.5 / 2.75)) {
-                       return c * (7.5625 * (t -= (2.25 / 2.75)) * t + .9375) + b;
-                   } else {
-                       return c * (7.5625 * (t -= (2.625 / 2.75)) * t + .984375) + b;
-                   }
-               }
-               
-               function Animate(elem, propName, duration, start, end) {
-                   var start_time = new Date().getTime();
-                   var interval = setInterval(function () {
-                       var current_time = new Date().getTime(),
-                           remaining = Math.max(0, start_time + duration - current_time),
-                           temp = remaining / duration || 0,
-                           percent = 1 - temp;
-                       
-                       if (start_time + duration < current_time) clearInterval(interval);
-                       
-                       var pos = easeOutBounce(null, duration * percent, 0, 1, duration),
-                           current = (end - start) * pos + start;
-                       
-                       elem.style[propName] = current + 'px';
-                   }, 1);
-               }
-               
-               var elem = document.getElementById('contactform');
-               var opened = false;
-               
-               document.getElementById('contact-button').onclick = function () {
-                   if (opened) {
-                       Animate(elem, 'left', 800, 0, -305);
-                       opened = false;
-                   } else {
-                       Animate(elem, 'left', 800, -305, 0);
-                       opened = true;
-                   }
-               }
-               
-               // Simple form submit handler
-               document.getElementById('slideout-form').addEventListener('submit', function(e) {
-                   e.preventDefault();
-                   alert('Thank you for your enquiry. We will get back to you soon.');
-                   this.reset();
-                   if(opened) {
-                       Animate(elem, 'left', 800, 0, -305);
-                       opened = false;
-                   }
-               });
-            </script>
          </header>
       </div>
-      <!-- Banner Section -->
-      <div class="rs-banner-section">
-         <img class="banner-image" src="images/banner/ban.jpg" alt="Brahmin Organisation Banner">
+     <!-- Banner Section -->
+<div class="rs-banner-section">
+
+   <div class="banner-bg">
+      <img src="images/banner/ban.jpg" alt="Brahmin Organisation Banner">
+      <div class="banner-overlay"></div>
+   </div>
+
+   <div class="banner-inner">
+      <div class="container">
+         <div class="banner-content">
+            <h1 class="banner-title">
+               Brahmin Organisation <br>
+               <span>of India (BOI)</span>
+            </h1>
+
+            <p class="banner-desc">
+               A unit of Bhagwan Parshuram Brahmin Charitable Trust (80G / 12A).  
+               Uniting Brahmins worldwide to preserve Vedic values, inspire youth,  
+               and build a vibrant global Brahman community rooted in  
+               <strong>Arpan, Samarpan and Tarpan.</strong>
+            </p>
+
+            <div class="banner-buttons">
+               <a href="#" class="btn-primary">Join the Community</a>
+               <a href="#" class="btn-outline">Discover Our Mission</a>
+            </div>
+
+         </div>
       </div>
+   </div>
+
+</div>
       <!-- Main Content -->
       <div class="main-content">
          <!-- Services Section -->
-         <div id="rs-services" class="rs-services-4 pt-100 pb-70">
+         <div id="rs-services" class="rs-services-4 pt-100" style="padding-bottom: 20px;">
             <div class="container">
                <div class="row">
                   <div class="col-lg-6 mb-md-20 pr-30">
@@ -355,114 +394,260 @@
                </div>
             </div>
          </div>
+
+         <!-- Mission & Values Section -->
+<div class="mission-section py-5">
+   <div class="container">
+
+      <!-- Heading -->
+      <div class="text-center mb-5"
+      >
+         <h2 class="section-title">Our Mission & Core Values</h2>
+         <p class="section-subtitle">
+            Guided by the lineage of Bhagwan Parshuram, we strive for collective prosperity.
+         </p>
+      </div>
+
+      <!-- Cards -->
+      <div class="row g-4">
+
+         <!-- Card 1 -->
+         <div class="col-md-6 col-lg-3">
+            <div class="value-card">
+               <div class="icon-box">
+                  <span class="material-symbols-outlined">temple_hindu</span>
+               </div>
+               <h5>Cultural Preservation</h5>
+               <p>
+                  Safeguarding the sacred rituals, Vedas, and traditions that define our spiritual identity.
+               </p>
+            </div>
+         </div>
+
+         <!-- Card 2 -->
+         <div class="col-md-6 col-lg-3">
+            <div class="value-card">
+               <div class="icon-box">
+                  <span class="material-symbols-outlined">school</span>
+               </div>
+               <h5>Youth Education</h5>
+               <p>
+                  Providing scholarships and mentorship to empower the next generation of scholars.
+               </p>
+            </div>
+         </div>
+
+         <!-- Card 3 -->
+         <div class="col-md-6 col-lg-3">
+            <div class="value-card">
+               <div class="icon-box">
+                  <span class="material-symbols-outlined">groups</span>
+               </div>
+               <h5>Community Collaboration</h5>
+               <p>
+                  Building a global network for professional and social mutual support among members.
+               </p>
+            </div>
+         </div>
+
+         <!-- Card 4 -->
+         <div class="col-md-6 col-lg-3">
+            <div class="value-card">
+               <div class="icon-box">
+                  <span class="material-symbols-outlined">volunteer_activism</span>
+               </div>
+               <h5>Social Service</h5>
+               <p>
+                  Dedicated charitable initiatives focused on healthcare and disaster relief for the needy.
+               </p>
+            </div>
+         </div>
+
+      </div>
+   </div>
+</div>
          <!-- Gallery Section -->
-         <div id="rs-team" class="rs-team-slider2 sec4-bg rs-team-slider pt-100 pb-100" style="margin-top: -135px;">
+         <div id="rs-gallery-preview" class="rs-gallery pt-50" style="background: #ffffff;">
             <div class="rs-title text-center">
                <img src="images/icon.png" alt="BOI Icon">
                <h2 class="title">BOI Gallery</h2>
             </div>
             <div class="container">
-               <div class="rs-carousel owl-carousel" data-loop="true" data-items="4" data-margin="20" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="2000" data-dots="false" data-nav="false" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="4" data-md-device-nav="false" data-md-device-dots="false">
-                  <div class="team-item">
-                     <div class="team-image">
-                        <img src="images/team/1.jpg" alt="BOI Event">
+               <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
+                     <div class="gallery-item">
+                        <div class="gallery-content">
+                           <img src="images/team/1.jpg" alt="BOI Event" />
+                           <div class="popup-text">
+                              <div class="filter-icon">
+                                 <a class="image-popup" href="images/team/1.jpg"><i class="fas fa-eye"></i></a>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
-                  <div class="team-item">
-                     <div class="team-image">
-                        <img src="images/team/2.jpeg" style="height: 191px; object-fit: cover;" alt="BOI Event">
+                  <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
+                     <div class="gallery-item">
+                        <div class="gallery-content">
+                           <img src="images/team/2.jpeg" alt="BOI Event" />
+                           <div class="popup-text">
+                              <div class="filter-icon">
+                                 <a class="image-popup" href="images/team/2.jpeg"><i class="fas fa-eye"></i></a>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
-                  <div class="team-item">
-                     <div class="team-image">
-                        <img src="images/team/14.jpg" style="height: 191px; object-fit: cover;" alt="BOI Event">
+                  <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
+                     <div class="gallery-item">
+                        <div class="gallery-content">
+                           <img src="images/team/14.jpg" alt="BOI Event" />
+                           <div class="popup-text">
+                              <div class="filter-icon">
+                                 <a class="image-popup" href="images/team/14.jpg"><i class="fas fa-eye"></i></a>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
-                  <div class="team-item">
-                     <div class="team-image">
-                        <img src="images/team/15.jpg" alt="BOI Event">
+                  <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
+                     <div class="gallery-item">
+                        <div class="gallery-content">
+                           <img src="images/team/15.jpg" alt="BOI Event" />
+                           <div class="popup-text">
+                              <div class="filter-icon">
+                                 <a class="image-popup" href="images/team/15.jpg"><i class="fas fa-eye"></i></a>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
-                  <div class="team-item">
-                     <div class="team-image">
-                        <img src="images/team/16.jpg" alt="BOI Event">
+                  <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
+                     <div class="gallery-item">
+                        <div class="gallery-content">
+                           <img src="images/team/16.jpg" alt="BOI Event" />
+                           <div class="popup-text">
+                              <div class="filter-icon">
+                                 <a class="image-popup" href="images/team/16.jpg"><i class="fas fa-eye"></i></a>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
-                  <div class="team-item">
-                     <div class="team-image">
-                        <img src="images/team/17.jpg" alt="BOI Event">
+                  <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
+                     <div class="gallery-item">
+                        <div class="gallery-content">
+                           <img src="images/team/17.jpg" alt="BOI Event" />
+                           <div class="popup-text">
+                              <div class="filter-icon">
+                                 <a class="image-popup" href="images/team/17.jpg"><i class="fas fa-eye"></i></a>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
-                  <div class="team-item">
-                     <div class="team-image">
-                        <img src="images/team/19.jpg" alt="BOI Event">
+                  <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
+                     <div class="gallery-item">
+                        <div class="gallery-content">
+                           <img src="images/team/19.jpg" alt="BOI Event" />
+                           <div class="popup-text">
+                              <div class="filter-icon">
+                                 <a class="image-popup" href="images/team/19.jpg"><i class="fas fa-eye"></i></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
+                     <div class="gallery-item">
+                        <div class="gallery-content">
+                           <img src="images/team/1.jpg" alt="BOI Event" />
+                           <div class="popup-text">
+                              <div class="filter-icon">
+                                 <a class="image-popup" href="images/team/1.jpg"><i class="fas fa-eye"></i></a>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
+               <div class="text-center">
+                  <a href="Gallery.html" class="gallery-view-all-btn">View All</a>
+               </div>
             </div>
          </div>
-      </div>
-    <!-- Footer -->
-<footer id="rs-footer">
-   <div class="container" style="max-width:1200px;margin:auto;padding:40px 20px 0px">
-      <div class="row">
-         <!-- Column 1 -->
-         <div class="col-lg-3 col-md-6 mb-4">
-            <img src="images/logo.png" style="height:55px;margin-bottom:15px;" alt="BOI Logo">
-            <p>
-               Preserving the Vedic identity and empowering the global Brahmin
-               community through education, service and collaboration.
-            </p>
-         </div>
-         <!-- Column 2 -->
-         <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="footer-heading">Quick Links</h5>
-            <ul class="footer-menu">
-               <li><a href="index.html">Home</a></li>
-               <li><a href="about.html">About Us</a></li>
-               <li><a href="gallery.html">Gallery</a></li>
-               <li><a href="news.html">News</a></li>
-            </ul>
-         </div>
-         <!-- Column 3 -->
-         <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="footer-heading">Resources</h5>
-            <ul class="footer-menu">
-               <li><a href="privacy-policy.html">Privacy Policy</a></li>
-               <li><a href="terms.html">Terms of Service</a></li>
-               <li><a href="volunteer.html">Volunteer</a></li>
-               <li><a href="donate.html">Donate Now</a></li>
-            </ul>
-         </div>
-         <!-- Column 4 -->
-         <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="footer-heading">Connect</h5>
-            <p style="margin-bottom: 0;">
-               Unit of Bhagwan Parshuram Brahmin Charitable Trust
-            </p>
-            <p >
-               Email:
-               <a href="mailto:Boindia18@gmail.com">Boindia18@gmail.com</a>
-            </p>
-            <a href="contact.html" class="footer-btn">
-               Contact Us
-            </a>
 
-         </div>
+         <!-- Call to Action Section -->
+<div class="cta-section py-5">
+  <div class="container text-center">
 
-      </div>
-
-   </div>
-
-
-   <!-- Bottom -->
-   <div class="footer-bottom">
-      <p>
-         © 2026 Brahmin Organisation of India. All Rights Reserved.
+    <!-- Content -->
+    <div class="cta-content">
+      <h2 class="cta-title mb-4">Join the BOI Community</h2>
+      <p class="cta-text mb-4">
+        Be part of a legacy. Contribute to our heritage and grow with a global family of like-minded individuals.
       </p>
-   </div>
+      <button class="cta-btn">Become a Member</button>
+    </div>
 
-</footer>
+  </div>
+</div>
+      </div>
+      <!-- Footer -->
+      <footer id="rs-footer">
+         <div class="container" style="max-width:1200px;margin:auto;padding:40px 20px 0px">
+            <div class="row">
+               <!-- Column 1 -->
+               <div class="col-lg-3 col-md-6 mb-4">
+                  <img src="images/logo.png" style="height:55px;margin-bottom:15px;" alt="BOI Logo">
+                  <p>
+                     Preserving the Vedic identity and empowering the global Brahmin
+                     community through education, service and collaboration.
+                  </p>
+               </div>
+               <!-- Column 2 -->
+               <div class="col-lg-3 col-md-6 mb-4">
+                  <h5 class="footer-heading">Quick Links</h5>
+                  <ul class="footer-menu">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about.html">About Us</a></li>
+                     <li><a href="gallery.html">Gallery</a></li>
+                     <li><a href="news.html">News</a></li>
+                  </ul>
+               </div>
+               <!-- Column 3 -->
+               <div class="col-lg-3 col-md-6 mb-4">
+                  <h5 class="footer-heading">Resources</h5>
+                  <ul class="footer-menu">
+                     <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                     <li><a href="terms.html">Terms of Service</a></li>
+                     <li><a href="volunteer.html">Volunteer</a></li>
+                     <li><a href="donate.html">Donate Now</a></li>
+                  </ul>
+               </div>
+               <!-- Column 4 -->
+               <div class="col-lg-3 col-md-6 mb-4">
+                  <h5 class="footer-heading">Connect</h5>
+                  <p style="margin-bottom: 0;">
+                     Unit of Bhagwan Parshuram Brahmin Charitable Trust
+                  </p>
+                  <p >
+                     Email:
+                     <a href="mailto:Boindia18@gmail.com">Boindia18@gmail.com</a>
+                  </p>
+                  <a href="contact.html" class="footer-btn">
+                  Contact Us
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!-- Bottom -->
+         <div class="footer-bottom">
+            <p>
+               © 2026 Brahmin Organisation of India. All Rights Reserved.
+            </p>
+         </div>
+      </footer>
       <!-- Scroll to Top -->
       <div id="scrollUp">
          <i class="fa fa-angle-up"></i>
@@ -486,26 +671,5 @@
       <script src="js/plugins.js"></script>
       <script src="js/contact.form.js"></script>
       <script src="js/main.js"></script>
-      <script>
-         // Initialize owl carousel if needed
-         $(document).ready(function() {
-             if($('.rs-carousel').length) {
-                 $('.rs-carousel').owlCarousel({
-                     loop: true,
-                     margin: 20,
-                     autoplay: true,
-                     autoplayTimeout: 5000,
-                     smartSpeed: 2000,
-                     dots: false,
-                     nav: false,
-                     responsive: {
-                         0: { items: 1 },
-                         768: { items: 2 },
-                         992: { items: 4 }
-                     }
-                 });
-             }
-         });
-      </script>
    </body>
 </html>

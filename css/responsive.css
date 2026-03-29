@@ -153,38 +153,57 @@
     }
 }
 
-@media screen and (min-width: 992px){
-    .nav-menu .rs-mega-menu > a:after, 
+.nav-menu .rs-mega-menu > a:after, 
     .nav-menu > .menu-item-has-children > a:after {
         content: "\f107";
         font-family: FontAwesome;
         float: right;
         margin: 2px 0 0 5px;
     }
-    .sticky{ 
-        background: #fff !important;
-        position: fixed !important;
-        top: 0px;
-        z-index: 999;
-        margin: 0 auto !important;
-        padding: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-        -webkit-animation-duration: .5s;
-        animation-duration: .5s;
-        -webkit-animation-name: sticky-animation;
-        animation-name: sticky-animation;
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-    }
+
+.sticky{ 
+    background: #fff !important;
+    position: fixed !important;
+    top: 0px;
+    z-index: 999;
+    margin: 0 auto !important;
+    padding: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-name: sticky-animation;
+    animation-name: sticky-animation;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@media screen and (min-width: 992px){
     .full-width-header .rs-header .menu-area .main-menu .rs-menu {
         padding-right: 60px;
     }
+}
+
+@media only screen and (max-width: 991px) {
+    .sticky {
+        background: #fff !important;
+        position: fixed !important;
+        top: 0;
+        z-index: 9999;
+        width: 100%;
+        left: 0;
+        right: 0;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    }
+    .menu-area.menu-sticky {
+        width: 100%;
+    }
+
 }
 /* Layout: Min 768px Max 1199px. */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -214,7 +233,7 @@
     }
     .pt-100,
     .counter-style-one {
-        padding-top: 80px !important;
+        padding-top: 50px !important;
     }
     .pb-100,
     .rs-our-practice2 {

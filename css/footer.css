@@ -44,7 +44,7 @@
 /* Button */
 .footer-btn{
   display:inline-block;
-  background:#8f4e00;
+  background: linear-gradient(135deg, #ff7a18, #ffb347);
   color:#fff;
   padding:4px 80px; /* fixed padding */
   font-size:14px;
@@ -54,7 +54,7 @@
 }
 
 .footer-btn:hover{
-  background:#6d3a00;
+  background: linear-gradient(135deg, #ff7a18, #e29a35);
   color:#fff;
 }
 
@@ -80,3 +80,38 @@
   color:#8f4e00;   /* same color as your button */
   letter-spacing:0.5px;
 }
+
+         /* Social Header Styles */
+         .full-width-header.top-social-bar {
+         text-align: right;
+         background: #2d1a0a;
+         padding: 5px 15px;
+         }
+         .social-links-header a {
+         padding: 8px 12px;
+         color: white;
+         display: inline-block;
+         transition: opacity 0.3s;
+         }
+         .social-links-header a:hover {
+         opacity: 0.8;
+         }
+         /* Top Header Social Icons - Circle Background on Hover */
+         .full-width-header.top-social-bar .social-links-header a {
+         transition: all 0.3s ease;
+         display: inline-block;
+         padding: 8px 12px;
+         border-radius: 50%;
+         width: 36px;
+         height: 36px;
+         line-height: 36px;
+         text-align: center;
+         padding: 0;
+         margin: 0 3px;
+         }
+         .full-width-header.top-social-bar .social-links-header a:hover {
+         background: linear-gradient(135deg, #ff7a18, #e29a35);
+         color: #fff;
+         transform: translateY(-2px);
+         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+         }
