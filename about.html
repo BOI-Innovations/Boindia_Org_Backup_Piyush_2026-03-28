@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <script src="https://kit.fontawesome.com/704a8664d3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <style>
         .a { padding: 10px; color: white; }
         #contactform {
@@ -49,6 +50,87 @@
         .rotated-text img {
             height: 130px;
             width: 130px;
+        }
+
+        /* Team Section Styles */
+        .team-profile {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 2px solid #e53267;
+        }
+        .rs-team h6 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #333;
+            margin: 0;
+        }
+
+        /* About and impact cards styling */
+        #rs-about-boi p {
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        #rs-about-boi,
+        #rs-community-impact {
+            background: #ffffff;
+        }
+
+        #rs-team {
+            background: #f8f9fa;
+        }
+
+        .impact-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 16px;
+            border: 1px solid #e7e7e7;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .impact-card .icon-box {
+            width: 50px;
+            height: 50px;
+            margin: 0 0 12px 0;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #ff7a18, #ffb347);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .impact-card h5 {
+            margin: 0 0 8px 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .impact-card p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .impact-card .icon-box .material-symbols-outlined {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .impact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
         }
 
     </style>
@@ -144,31 +226,96 @@
 
 </section>
 
-   
 
-        <!-- About Content -->
-        <div id="rs-about-lawyer" class="rs-about-lawyer pt-100 pb-100">
-            <div class="container">
-                <div class="about-inner about-right-bg" style="top: -70px;">
-                    <div class="row rs-vertical-middle">
-                        <div class="col-lg-12">
-                            <div class="about-style2">
-                                <div class="rs-heading-style3">
-                                    <h2 style="color:#e53267">Brahmin Organisation of India(BOI)<br />ब्राह्मण संगठन ऑफ़ इंडिया(BOI)</h2>
-                                </div>
-                                <p class="des" style="text-align:justify">
-                                    <b>Brahmin Organisation of India(BOI)</b> is a unit of Bhagwan Parshuram Brahmin Charitable Trust Regd under section 80G and 12A of the ITA, 1961. Let all Brahmins come together here, share, collaborate, contribute and create a live and vibrantly dynamic community. We aim to create a unique brahmanic force that will act as a compelling agent for change, for the global Brahman community and for society at large. In a world attuned to western cultures we shall do our best to educate younger generations about the timeless values of our priceless Vedic Hindu culture. For we were and shall remain quintessentially Indian brahmans following the principles of arpan, samarpan and tarpan. 
-                                    <br><br>
-                                    Since times immemorial Brahmans have been renowned for their learning and wisdom. From Agastya to Chanakya to Narayana Murthy(of Infosys fame) we have a long line of illustrious Brahmans who have guided kings and defined statecraft as well as general guidelines for “sattvik” living. If Chanakya could define statecaft in his Arthasastra and be the guiding mind behind the great Mauryan Empire, we, today’s Brahmans, with a global, spread, can do as much, if not, more. For brahmans worldwide and for everyone else. Chanakya, the Brahman, typifies absolute determination in the way he used his wits to help Chandragupta and overcame the powerful Nanda Empire. Apart from that his Neetisastra defined a way of life worth emulating even to this day. We, today’s Brahmans, inherit the legacy of Chandragupta and Agastya. More recently, we have Adi Shankaracharya, Morarji Desai, Atal Bihari Vajpaye, N Ramarao Narayana Murthy of Infosys, Chandrashekhar Azad and Lata Mangeshkar to inspire us. 
-                                    <br><br>
-                                    As humans we can be shrewd, we can be sharp, cunning, smart or full of wisdom. The ultimate is wisdom coupled with knowledge of which we brahmans are capable. Different minds have different ways of thinking. When the wise get together and combine wisdom with action, the result is change; a positive change. We aim to make this organisation the meeting ground for brahmans whose wisdom will galvanize youth into meaningful action. 
-                                    <br><br>
-                                    That’s not all. Life can be more fun, infinitely more enjoyable in all its glorious colours and shades when like minded people from the same community, regardless of their gotras, get together. Scattered by wars, by muslim invasions, by British occupations, by politics of current India, brahmans have been divided and marginalized. Let us all come together through this organisation and resurge as a community, sharing festivals, joys and burdens, rituals and the many perspectives of life. We can form alliances, friendships and connections; we can heal; we can define destinies like Agastya did and use modern Brahmastra for overall good. We can give help and receive it. We can support and receive moral support. We can learn and we can educate. All this is possible here. All it needs is involvement to some degree. 
-                                    <br><br>
-                                    "Before you start some work, always ask yourself three questions - Why am I doing it, What the results might be and Will I be successful. Only when you think deeply and find satisfactory answers to these questions, go ahead," said Chanakya. Brahmans of all ages can come together right here, ask questions, find answers, create paths and set examples. We want brahmans of the world to unite here, think and act and leave lasting legacies for future generations through arpan, tarpan and samarpan. 
-                                </p>
-                            </div>
-                        </div>
+    <!-- About BOI Section -->
+    <div id="rs-about-boi" class="rs-about-boi pt-50" style="background: #ffffff; padding-bottom: 30px;">
+        <div class="container">
+            <div class="rs-title text-center mb-4">
+                <h2 class="title">Brahmin Organisation of India (BOI)</h2>
+                
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Brahmin Organisation of India (BOI) is a unit of Bhagwan Parshuram Brahmin Charitable Trust Regd under section 80G and 12A of the ITA, 1961. Let all Brahmins come together here, share, collaborate, contribute and create a live and vibrantly dynamic community. We aim to create a unique brahmanic force that will act as a compelling agent for change, for the global Brahman community and for society at large. In a world attuned to western cultures we shall do our best to educate younger generations about the timeless values of our priceless Vedic Hindu culture. For we were and shall remain quintessentially Indian brahmans following the principles of arpan, samarpan and tarpan.</p>
+                    <p>Since times immemorial Brahmans have been renowned for their learning and wisdom. From Agastya to Chanakya to Narayana Murthy(of Infosys fame) we have a long line of illustrious Brahmans who have guided kings and defined statecraft as well as general guidelines for “sattvik” living. If Chanakya could define statecaft in his Arthasastra and be the guiding mind behind the great Mauryan Empire, we, today’s Brahmans, with a global, spread, can do as much, if not, more. For brahmans worldwide and for everyone else. Chanakya, the Brahman, typifies absolute determination in the way he used his wits to help Chandragupta and overcame the powerful Nanda Empire. Apart from that his Neetisastra defined a way of life worth emulating even to this day. We, today’s Brahmans, inherit the legacy of Chandragupta and Agastya. More recently, we have Adi Shankaracharya, Morarji Desai, Atal Bihari Vajpaye, N Ramarao Narayana Murthy of Infosys, Chandrashekhar Azad and Lata Mangeshkar to inspire us.</p>
+                    <p>As humans we can be shrewd, we can be sharp, cunning, smart or full of wisdom. The ultimate is wisdom coupled with knowledge of which we brahmans are capable. Different minds have different ways of thinking. When the wise get together and combine wisdom with action, the result is change; a positive change. We aim to make this organisation the meeting ground for brahmans whose wisdom will galvanize youth into meaningful action.</p>
+                    <p>That’s not all. Life can be more fun, infinitely more enjoyable in all its glorious colours and shades when like minded people from the same community, regardless of their gotras, get together. Scattered by wars, by muslim invasions, by British occupations, by politics of current India, brahmans have been divided and marginalized. Let us all come together through this organisation and resurge as a community, sharing festivals, joys and burdens, rituals and the many perspectives of life. We can form alliances, friendships and connections; we can heal; we can define destinies like Agastya did and use modern Brahmastra for overall good. We can give help and receive it. We can support and receive moral support. We can learn and we can educate. All this is possible here. All it needs is involvement to some degree.</p>
+                    <p>"Before you start some work, always ask yourself three questions - Why am I doing it, What the results might be and Will I be successful. Only when you think deeply and find satisfactory answers to these questions, go ahead," said Chanakya. Brahmans of all ages can come together right here, ask questions, find answers, create paths and set examples. We want brahmans of the world to unite here, think and act and leave lasting legacies for future generations through arpan, tarpan and samarpan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div id="rs-team" class="rs-team pt-50 pb-50" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="rs-title text-center mb-5">
+                <h2 class="title">Our Core Team</h2>
+                <p>Meet the dedicated leaders guiding our mission</p>
+            </div>
+            <div class="row g-3 justify-content-center">
+                <div class="col-6 col-sm-4 col-md-2 text-center">
+                    <img src="images/team/1.jpg" alt="Team Member 1" class="team-profile">
+                    <h6>Team Member 1</h6>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center">
+                    <img src="images/team/14.jpg" alt="Team Member 2" class="team-profile">
+                    <h6>Team Member 2</h6>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center">
+                    <img src="images/team/15.jpg" alt="Team Member 3" class="team-profile">
+                    <h6>Team Member 3</h6>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center">
+                    <img src="images/team/16.jpg" alt="Team Member 4" class="team-profile">
+                    <h6>Team Member 4</h6>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center">
+                    <img src="images/team/17.jpg" alt="Team Member 5" class="team-profile">
+                    <h6>Team Member 5</h6>
+                </div>
+                <div class="col-6 col-sm-4 col-md-2 text-center">
+                    <img src="images/team/19.jpg" alt="Team Member 6" class="team-profile">
+                    <h6>Team Member 6</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Community Impact Section -->
+    <div id="rs-community-impact" class="rs-community-impact pt-50" style="padding-bottom: 30px;">
+        <div class="container">
+            <div class="rs-title text-center mb-5">
+                <h2 class="title">Community Impact</h2>
+                <p>Connecting knowledge, culture, and service in a global Brahmin community.</p>
+            </div>
+            <div class="row g-3 justify-content-center">
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="impact-card">
+                        <div class="icon-box"><span class="material-symbols-outlined">people</span></div>
+                        <h5>10,000+ Members Connected</h5>
+                        <p>Global network, sharing and mentoring across the community.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="impact-card">
+                        <div class="icon-box"><span class="material-symbols-outlined">celebration</span></div>
+                        <h5>250+ Cultural Programs</h5>
+                        <p>Festivals, rituals, and educational events celebrating Brahmin heritage.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="impact-card">
+                        <div class="icon-box"><span class="material-symbols-outlined">volunteer_activism</span></div>
+                        <h5>100+ Community Initiatives</h5>
+                        <p>Projects for empowerment, education and community resilience.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="impact-card">
+                        <div class="icon-box"><span class="material-symbols-outlined">support</span></div>
+                        <h5>50+ Social Service Activities</h5>
+                        <p>Service programs in health, disaster relief, and social support.</p>
                     </div>
                 </div>
             </div>

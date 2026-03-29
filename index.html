@@ -232,7 +232,7 @@
 .cta-btn {
    
     background: linear-gradient(135deg, #ff7a18, #ffb347);
-    padding: 10px 35px;
+    padding: 8px 35px;
     font-size: 1.1rem;
     font-weight: 700;
     border-radius: 8px;
@@ -256,7 +256,61 @@
         font-size: 2rem;
     }
 }
-         
+
+/* Card hover effect */
+.service-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* makes entire card clickable */
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Icon background */
+.service-box .icon-part {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff7a18, #ffb347);
+  color: #fff;
+}
+
+/* Card text */
+.service-box h5 a {
+  color: #222;
+  font-weight: 600;
+}
+
+.service-box h5 a:hover {
+  color: #8f4e00;
+}
+
+#rs-services .row.align-items-center img {
+  max-width: 100%;
+  width: 75%;      
+  height: auto;    
+  display: block;
+  margin: 0 auto;  
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .rs-services-4 .row:first-child {
+    flex-direction: column-reverse;
+  }
+
+  .rs-services-4 .row:first-child img {
+    width: 100%; /* full width on mobile */
+    margin-bottom: 20px;
+  }
+}
+
       </style>
    </head>
    <body>
@@ -340,60 +394,96 @@
 </div>
       <!-- Main Content -->
       <div class="main-content">
-         <!-- Services Section -->
-         <div id="rs-services" class="rs-services-4 pt-100" style="padding-bottom: 20px;">
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-6 mb-md-20 pr-30">
-                     <div class="service-inner serives-grid">
-                        <div class="row">
-                           <div class="col-md-6">
-                              <div class="service-box">
-                                 <div class="icon-part">
-                                    <i class="fas fa-history fa-2x"></i>
-                                    <h4><a href="HISTORY.HTML" style="FONT-SIZE: 17PX;">HISTORY OF BRAHMINS</a></h4>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-md-6">
-                              <div class="service-box">
-                                 <div class="icon-part">
-                                    <i class="fas fa-place-of-worship fa-2x"></i>
-                                    <h4><a href="Rituals.HTML" style="FONT-SIZE: 17PX;">Brahmanic Rituals</a></h4>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-md-6">
-                              <div class="service-box">
-                                 <div class="icon-part">
-                                    <i class="fas fa-user-friends"></i>
-                                    <h4><a href="CASTES.HTML" style="FONT-SIZE: 17PX;">BRAHMIN CASTES</a></h4>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-md-6">
-                              <div class="service-box">
-                                 <div class="icon-part">
-                                    <i class="fas fa-gopuram"></i>
-                                    <h4><a href="Gotras.HTML" style="FONT-SIZE: 17PX;">BRAHMIN Gotras</a></h4>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-6 pl-30">
-                     <div class="rs-title mb-40">
-                        <h2 class="title">Who We Are</h2>
-                        <p style="text-align:justify">
-                           <span><b>Brahmin Organisation of India(BOI)</b></span> is a unit of Bhagwan Parshuram Brahmin Charitable Trust registered under section 80G and 12A of the ITA, 1961. Let all Brahmins come together here, share, collaborate, contribute and create a live and vibrantly dynamic community. We aim to create a unique brahmanic force that will act as a compelling agent for change, for the global Brahman community and for society at large. In a world attuned to western cultures we shall do our best to educate younger generations about the timeless values of our priceless Vedic Hindu culture. For we were and shall remain quintessentially Indian brahmans following the principles of arpan, samarpan and tarpan.
-                           <a href="about.html" style="color: #fd3687">Read More..</a>
-                        </p>
-                     </div>
-                  </div>
-               </div>
+<!-- RS Services Section -->
+<div id="rs-services" class="rs-services-4 pt-100 pb-50">
+  <div class="container">
+
+    <!-- First Row -->
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6">
+        <img src="images/whoWeAre.png" alt="Brahmin Heritage" class="img-fluid rounded">
+      </div>
+      <div class="col-lg-6">
+        <div class="rs-title">
+          <h2 class="title">Who We Are</h2>
+          <p style="text-align:justify;">
+            <strong>Brahmin Organisation of India (BOI)</strong>, under the Bhagwan Parshuram Brahmin Charitable Trust, 
+            aims to unite Brahmins globally into a dynamic and collaborative community. Its mission is to preserve and promote 
+            Vedic Hindu values, especially among younger generations, while fostering social contribution and cultural continuity.
+          </p>
+
+          <p style="text-align:justify;">
+            The organization highlights the rich legacy of Brahmin wisdom and leadership, drawing inspiration from figures like 
+            Chanakya, Agastya, Adi Shankaracharya, and modern personalities such as Narayana Murthy and Lata Mangeshkar. 
+            It emphasizes the power of collective wisdom and action to create meaningful societal change.
+          </p>
+
+          <p style="text-align:justify;">
+            BOI provides a platform for knowledge-sharing, mutual support, cultural celebration, and community bonding beyond 
+            divisions like gotras. It encourages unity, learning, and leadership rooted in principles like 
+            <em>arpan, samarpan,</em> and <em>tarpan</em>.
+            <a href="about.html" style="color: #fd3687;">Read More..</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <a href="history.html" class="text-decoration-none">
+          <div class="value-card">
+            <div class="icon-box">
+              <span class="material-symbols-outlined">history_edu</span>
             </div>
-         </div>
+            <h5>History of Brahmins</h5>
+            <p>Explore the rich history and heritage of the Brahmin community.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="rituals.html" class="text-decoration-none">
+          <div class="value-card">
+            <div class="icon-box">
+              <span class="material-symbols-outlined">temple_hindu</span>
+            </div>
+            <h5>Brahmanic Rituals</h5>
+            <p>Learn about the sacred Brahmanic rituals and traditions.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="castes.html" class="text-decoration-none">
+          <div class="value-card">
+            <div class="icon-box">
+              <span class="material-symbols-outlined">groups</span>
+            </div>
+            <h5>Brahmin Communities</h5>
+            <p>Discover the various Brahmin communities and their significance.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-3">
+        <a href="gotras.html" class="text-decoration-none">
+          <div class="value-card">
+            <div class="icon-box">
+              <span class="material-symbols-outlined">account_tree</span>
+            </div>
+            <h5>Brahmin Gotras</h5>
+            <p>Understand the Brahmin gotras and their lineage.</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
 
          <!-- Mission & Values Section -->
 <div class="mission-section py-5">

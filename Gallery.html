@@ -48,6 +48,80 @@
             color: white;
         }
 
+        /* Gallery section alignment */
+        #rs-gallery {
+            padding-top: 40px;
+            background: #f8f9fa;
+        }
+
+        #rs-gallery .rs-heading-style3 {
+            margin-bottom: 40px;
+        }
+
+        #rs-gallery .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #rs-gallery .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: none; /* remove hover shadow background effect */
+        }
+
+        #rs-gallery .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        #rs-gallery .gallery-content {
+            position: relative;
+        }
+
+        #rs-gallery .popup-text {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.25s ease;
+            background: transparent;
+        }
+
+        #rs-gallery .gallery-item:hover .popup-text {
+            opacity: 1;
+        }
+
+        /* Enforce same card dimensions for all images */
+        #rs-gallery .gallery-item .gallery-content {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            max-height: none;
+            min-height: 0;
+            height: auto;
+        }
+
+        #rs-gallery .gallery-item .gallery-content img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+        }
+
     </style>
 
        <!-- Top Social Bar -->
@@ -142,7 +216,7 @@
     <!-- Main content Start -->
     <div class="main-content">
         <!-- Gallery Section Start -->
-        <div id="rs-gallery" class="rs-gallery  ">
+        <div id="rs-gallery" class="rs-gallery">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">

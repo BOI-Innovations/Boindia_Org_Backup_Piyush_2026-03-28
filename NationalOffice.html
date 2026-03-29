@@ -50,6 +50,49 @@
             width: 130px;
         }
 
+        /* Team Card Section */
+        .team-section {
+            background: #f8f9ff;
+            padding: 40px 0;
+            padding-bottom: 20px;
+        }
+        .team-section h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .team-card {
+            background: #ffffff;
+            border: 1px solid #e7e7e7;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 9px 24px rgba(0,0,0,0.14);
+        }
+        .team-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+        .team-card .team-info {
+            padding: 18px;
+        }
+        .team-card .team-info h5 {
+            margin: 0 0 6px;
+            font-size: 1.05rem;
+            font-weight: 700;
+        }
+        .team-card .team-info p {
+            margin: 0;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
     </style>
 </head>
 <body class="defult-home">
@@ -103,7 +146,7 @@
          </header>
       </div>
 
-<!-- Banner Section -->
+      <!-- Banner Section -->
 <section style="position: relative; height: 280px; overflow: hidden;">
 
    <!-- Background -->
@@ -144,154 +187,105 @@
 
 </section>
 
-
-    <!-- Main Content -->
-    <div class="main-content">
-        <!-- Core Team Section -->
-        <div id="rs-about-lawyer" class="rs-about-lawyer pt-100 pb-100">
-            <div class="container">
-                <div class="about-inner about-right-bg" style="top: -70px;">
-                    <div class="row rs-vertical-middle">
-                        <div class="col-lg-12">
-                            <div class="about-style2" style="margin-top: -65px;">
-                                <div class="rs-heading-style3">
-                                    <h2 style="text-align:center">Brahmin Organisation of India (BOI)</h2>
-                                    <p style="text-align:center;font-size:17px">List of National Office Bearer</p>
-                                </div>
-
-                                <!-- Team Members Grid -->
-                                <section id="rs-blog" class="rs-blog pt-100 pb-100">
-                                    <div class="container">
-                                        <div class="row" style="margin-top: -83px;">
-                                            <div class="col-lg-3 col-md-6 col-sm-6 mb-50">
-                                                <div class="blog-item">
-                                                    <div class="blog-img">
-                                                        <a class="blog-link">
-                                                            <img src="images/sukbir.jpg" class="image-responsive" style="height: 263px;" alt="Member Image">
-                                                        </a>
-                                                    </div>
-                                                    <div class="content-wrapper">
-                                                        <div class="blog-meta border-style">
-                                                            <h4><a href="#">Pt. Sukhbir Sharma</a></h4>
-                                                            <ul>
-                                                                <li><span>Founder</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-6 mb-50">
-                                                <div class="blog-item">
-                                                    <div class="blog-img">
-                                                        <a class="blog-link">
-                                                            <img src="images/ramesh.jpg" style="height: 263px;" alt="Member Image">
-                                                        </a>
-                                                    </div>
-                                                    <div class="content-wrapper">
-                                                        <div class="blog-meta border-style">
-                                                            <h4><a href="#">Pt. Ramesh Kitchloo</a></h4>
-                                                            <ul>
-                                                                <li><span>President</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-6 mb-50">
-                                                <div class="blog-item">
-                                                    <div class="blog-img">
-                                                        <a class="blog-link">
-                                                            <img src="images/ravi.jpg" style="height: 263px;" alt="Member Image">
-                                                        </a>
-                                                    </div>
-                                                    <div class="content-wrapper">
-                                                        <div class="blog-meta border-style">
-                                                            <h4><a href="#">Dr. Ravi Dutt Gaur</a></h4>
-                                                            <ul>
-                                                                <li><span>General Secretary(Admin)</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-6 mb-50">
-                                                <div class="blog-item">
-                                                    <div class="blog-img">
-                                                        <a class="blog-link">
-                                                            <img src="images/kuldeep.jpg" alt="Member Image">
-                                                        </a>
-                                                    </div>
-                                                    <div class="content-wrapper">
-                                                        <div class="blog-meta border-style">
-                                                            <h4><a href="#">Dr Kuldeep Sharma</a></h4>
-                                                            <ul>
-                                                                <li><span>General Secretary</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-6 mb-50">
-                                                <div class="blog-item">
-                                                    <div class="blog-img">
-                                                        <a class="blog-link">
-                                                            <img src="images/goswami.jpg" style="height: 263px;" alt="Blog Image">
-                                                        </a>
-                                                    </div>
-                                                    <div class="content-wrapper">
-                                                        <div class="blog-meta border-style">
-                                                            <h4><a href="#">Goswami S.K. Puri</a></h4>
-                                                            <ul>
-                                                                <li><span>Treasurer</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-6 mb-50">
-                                                <div class="blog-item">
-                                                    <div class="blog-img">
-                                                        <a class="blog-link">
-                                                            <img src="images/Azad.jpg" style="height: 263px;" alt="Member Image">
-                                                        </a>
-                                                    </div>
-                                                    <div class="content-wrapper">
-                                                        <div class="blog-meta border-style">
-                                                            <h4><a href="#">Pt. Azad Atri,Advocate</a></h4>
-                                                            <ul>
-                                                                <li><span>Chief Patron</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3 col-md-6 col-sm-6 mb-50">
-                                                <div class="blog-item">
-                                                    <div class="blog-img">
-                                                        <a class="blog-link">
-                                                            <img src="images/" style="height: 263px;" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="content-wrapper">
-                                                        <div class="blog-meta border-style">
-                                                            <h4><a href="#">Pt.Sube Singh Sharma</a></h4>
-                                                            <ul>
-                                                                <li><span>Secretary</span></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!-- Team Section -->
+      <section class="team-section">
+         <div class="container">
+            <div class="text-center mb-5 rs-title">
+               <h2 class="title">Our Core Team</h2>
+               <p>Meet the Brahmin Organisation of India leadership team (8 members).</p>
             </div>
-        </div>
-    </div>
+            <div class="row">
+               <div class="col-lg-3 col-md-6">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/team/1.jpg">
+                        <img src="images/team/1.jpg" alt="Shri Ramesh Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Shri Ramesh Sharma</h5>
+                        <p>President</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/team/2.jpeg">
+                        <img src="images/team/2.jpeg" alt="Dr. Sunita Dixit">
+                     </a>
+                     <div class="team-info">
+                        <h5>Dr. Sunita Dixit</h5>
+                        <p>General Secretary</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/team/14.jpg">
+                        <img src="images/team/14.jpg" alt="Shri Ashok Rao">
+                     </a>
+                     <div class="team-info">
+                        <h5>Shri Ashok Rao</h5>
+                        <p>Vice President</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/team/15.jpg">
+                        <img src="images/team/15.jpg" alt="Shri Sanjay Verma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Shri Sanjay Verma</h5>
+                        <p>Treasurer</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/team/16.jpg">
+                        <img src="images/team/16.jpg" alt="Ms. Kavita Mehta">
+                     </a>
+                     <div class="team-info">
+                        <h5>Ms. Kavita Mehta</h5>
+                        <p>Head of Outreach</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/team/17.jpg">
+                        <img src="images/team/17.jpg" alt="Shri Ajay Gupta">
+                     </a>
+                     <div class="team-info">
+                        <h5>Shri Ajay Gupta</h5>
+                        <p>Member Relations Lead</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/team/19.jpg">
+                        <img src="images/team/19.jpg" alt="Dr. Meenakshi Nair">
+                     </a>
+                     <div class="team-info">
+                        <h5>Dr. Meenakshi Nair</h5>
+                        <p>Education Director</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/team/1.jpg">
+                        <img src="images/team/1.jpg" alt="Shri Vivek Kumar">
+                     </a>
+                     <div class="team-info">
+                        <h5>Shri Vivek Kumar</h5>
+                        <p>Events Coordinator</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
 
         <!-- Footer -->
 <footer id="rs-footer">
