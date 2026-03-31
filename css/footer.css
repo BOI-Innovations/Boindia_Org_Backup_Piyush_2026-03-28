@@ -36,15 +36,24 @@
 }
 
 .footer-menu a:hover{
-  color:#8f4e00;   /* same as button color */
+  color:#e53267;   /* same as button color */
   transform:translateX(-6px); /* move LEFT */
+}
+
+/* Global Footer link hover for email and other generic links */
+#rs-footer a:not(.footer-btn):hover {
+  color: #e53267;
+}
+
+#rs-footer a {
+  transition: all 0.3s ease;
 }
 
 
 /* Button */
 .footer-btn{
   display:inline-block;
-  background: linear-gradient(135deg, #ff7a18, #ffb347);
+ background: linear-gradient(135deg, #e53267, #ff7a9c);
   color:#fff;
   padding:4px 80px; /* fixed padding */
   font-size:14px;
@@ -54,7 +63,7 @@
 }
 
 .footer-btn:hover{
-  background: linear-gradient(135deg, #ff7a18, #e29a35);
+background: linear-gradient(135deg, #e02e64, #f87092);
   color:#fff;
 }
 
@@ -77,7 +86,7 @@
 }
 
 .footer-bottom p:hover{
-  color:#8f4e00;   /* same color as your button */
+  color:#e53267;   /* same color as your button */
   letter-spacing:0.5px;
 }
 
@@ -110,7 +119,7 @@
          margin: 0 3px;
          }
          .full-width-header.top-social-bar .social-links-header a:hover {
-         background: linear-gradient(135deg, #ff7a18, #e29a35);
+        background: linear-gradient(135deg, #e53267, #b81f4d);
          color: #fff;
          transform: translateY(-2px);
          box-shadow: 0 5px 10px rgba(0,0,0,0.2);

@@ -302,7 +302,7 @@ button:focus {
   line-height: normal;
   color: #ffffff;
   transition: all 0.3s ease 0s;
-  border-radius: 3px;
+  border-radius: 10px;
   padding: 0 20px;
   height: 50px;
   line-height: 50px;
@@ -823,14 +823,14 @@ button:focus {
 }
 
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li a:hover {
-  color: #8d6e63;
+  color: #c81e55 ;
 }
 
 /* Active Menu */
 
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul li.active a,
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul li.current-menu-item > a {
-  color: #8d6e63;
+  color: #c81e55 ;
 }
 
 /* Dropdown Menu */
@@ -906,7 +906,7 @@ button:focus {
 .full-width-header.header-transparent .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li a:hover,
 .full-width-header.header-transparent .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li.current-menu-item > a,
 .full-width-header.header-transparent .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li.active > a {
-  color: #ffdca0;
+  color: #c81e55;
 }
 
 .full-width-header.header-transparent .rs-header .menu-area .main-menu .rs-menu ul.sub-menu li a {
@@ -914,7 +914,7 @@ button:focus {
 }
 
 .full-width-header.header-transparent .rs-header .menu-area .main-menu .rs-menu ul.sub-menu li a:hover {
-  color: #ffdca0;
+  color: #c81e55;
 }
 
 /* Menu text on scroll (sticky mode) */
@@ -927,7 +927,7 @@ button:focus {
 .full-width-header.header-transparent .rs-header .menu-area.menu-sticky.sticky .main-menu .rs-menu ul.sub-menu li a:hover,
 .full-width-header.header-transparent .rs-header .menu-area.menu-sticky.sticky .main-menu .rs-menu ul.nav-menu li.current-menu-item > a,
 .full-width-header.header-transparent .rs-header .menu-area.menu-sticky.sticky .main-menu .rs-menu ul.nav-menu li.active > a {
-  color: #8d6e63 !important;
+  color: #c81e55 !important;
 }
 
 /* Contact button style aligned to menu */
@@ -1287,11 +1287,11 @@ body .modal-backdrop {
   font-weight: 600;
   font-size: 15px;
   transition: 0.3s;
-  background: linear-gradient(135deg, #ff7a18, #ffb347);
+  background: linear-gradient(135deg, #e53267, #ff7a9c);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #ff7a18, #e29a35);
+  background: linear-gradient(135deg, #e02e64, #f87092);
   transform: translateY(-2px);
 }
 
@@ -3753,7 +3753,7 @@ ul.icon-list i {
 .gallery-view-all-btn {
   display: inline-block;
   padding: 8px 26px;
-  background: #8f4e00;;
+  background: linear-gradient(135deg, #e53267, #ff7a9c);
   color: #fff;
   border-radius: 8px;
   text-decoration: none;
@@ -3761,7 +3761,7 @@ ul.icon-list i {
   transition: background 0.2s ease;
 }
 .gallery-view-all-btn:hover {
-  background: #6d3a00;
+  background: linear-gradient(135deg, #e02e64, #f87092);
   color: #ffffff;
 }
 
@@ -3970,7 +3970,7 @@ ul.icon-list i {
 }
 .contact-address-section .contact-info {
   padding: 35px 10px 33px;
-  border-radius: 5px;
+  border-radius: 10px;
   background: #ffffff;
 }
 .contact-address-section .contact-info i {
