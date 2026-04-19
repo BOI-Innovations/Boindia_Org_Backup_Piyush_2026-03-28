@@ -2,6 +2,10 @@ $(document).ready(function () {
 	// Strict Mode
 	"use strict";
 
+	// Reset menu state on page load
+	$('.rs-menu').css('height', '0px').addClass('rs-menu-close');
+	$('a.rs-menu-toggle').removeClass('rs-menu-toggle-open').addClass('rs-menu-toggle-close').find('i').removeClass('fa-times').addClass('fa-bars');
+
 	//Defines variables	
 	var arrow_up = '<i class="fa fa-angle-up" aria-hidden="true"></i>';
 	var arrow_down = '<i class="fa fa-angle-down" aria-hidden="true"></i>';
@@ -90,9 +94,11 @@ $(document).ready(function () {
 		
 		if ($(this).hasClass('rs-menu-toggle-open')) {		
 			$(this).removeClass('rs-menu-toggle-open').addClass('rs-menu-toggle-close');
+			$(this).find('i').removeClass('fa-times').addClass('fa-bars');
 			$('.rs-menu').animate({height:'0px'},{queue:false, duration:300}).addClass('rs-menu-close');	
 		} else {			
 			$(this).removeClass('rs-menu-toggle-close').addClass('rs-menu-toggle-open');
+			$(this).find('i').removeClass('fa-bars').addClass('fa-times');
 			$('.rs-menu').animate({height:menu_height},{queue:false, duration:300}).removeClass('rs-menu-close');
 		}
 	});	
