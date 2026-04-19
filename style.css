@@ -4650,6 +4650,10 @@ div#rs-partner .partner-item img {
 @media screen and (max-width: 991px) {
   .main-menu .rs-menu ul.nav-menu > li > a {
     background: #333333;
+    color: #fff !important;
+  }
+  .full-width-header.header-transparent .rs-header .menu-area.menu-sticky.sticky .main-menu .rs-menu ul.nav-menu > li > a {
+    color: #fff !important;
   }
   .main-menu .rs-menu ul.nav-menu > li > a:hover,
   .main-menu .rs-menu ul.nav-menu > li.current-menu-item > a {
