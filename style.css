@@ -918,11 +918,15 @@ button:focus {
 }
 
 /* Menu text on scroll (sticky mode) */
+.full-width-header.header-transparent .rs-header .menu-area.menu-sticky.sticky .main-menu .rs-menu-toggle,
+.full-width-header.header-transparent .rs-header .menu-area.menu-sticky.sticky .main-menu .rs-menu-toggle i,
 .full-width-header.header-transparent .rs-header .menu-area.menu-sticky.sticky .main-menu .rs-menu ul.nav-menu li a,
 .full-width-header.header-transparent .rs-header .menu-area.menu-sticky.sticky .main-menu .rs-menu ul.sub-menu li a {
   color: #333333 !important;
 }
 
+.full-width-header.header-transparent .rs-header .menu-area.menu-sticky.sticky .main-menu .rs-menu-toggle:hover,
+.full-width-header.header-transparent .rs-header .menu-area.menu-sticky.sticky .main-menu .rs-menu-toggle i:hover,
 .full-width-header.header-transparent .rs-header .menu-area.menu-sticky.sticky .main-menu .rs-menu ul.nav-menu li a:hover,
 .full-width-header.header-transparent .rs-header .menu-area.menu-sticky.sticky .main-menu .rs-menu ul.sub-menu li a:hover,
 .full-width-header.header-transparent .rs-header .menu-area.menu-sticky.sticky .main-menu .rs-menu ul.nav-menu li.current-menu-item > a,
