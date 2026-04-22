@@ -1330,6 +1330,17 @@ body .modal-backdrop {
     flex-wrap: wrap;
   }
 }
+
+/* Large Screen - Hide Content and Remove Overlay */
+@media (min-width: 992px) {
+  .banner-content {
+    display: none;
+  }
+
+  .rs-banner-section .banner-overlay {
+    background: transparent;
+  }
+}
 /* ------------------------------------
     06. About Us CSS
 ---------------------------------------*/
