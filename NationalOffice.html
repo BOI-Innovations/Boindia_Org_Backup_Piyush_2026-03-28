@@ -158,6 +158,29 @@
             flex: 0 0 calc(20% - (4 * 0.25rem) / 5);
          }
       }
+      .founder-img-card {
+   height: 100% !important;
+   display: flex;
+   flex-direction: column;
+}
+
+.founder-img-card a {
+   flex-grow: 1;
+}
+
+.founder-img {
+   width: 100% !important;
+   height: 100% !important;
+   object-fit: cover;
+   border-radius: 6px; /* optional */
+}
+.founder-message p {
+   text-align: justify;
+}
+
+.founder-message blockquote {
+   text-align: justify;
+}
    </style>
 </head>
 
@@ -266,23 +289,56 @@
          </div>
 
          <!-- 1. Founder Section -->
-         <div class="team-subsection mb-5">
-            <h3 class="team-subsection-title">1. Founder</h3>
-            <p class="team-subsection-desc">Visionary behind the organization</p>
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-5 g-4">
-               <div class="col">
-                  <div class="team-card">
-                     <a class="image-popup" href="images/sukbir.jpg">
-                        <img src="images/sukbir.jpg" alt="Pt. Sukhbir Sharma">
-                     </a>
-                     <div class="team-info">
-                        <h5>Pt. Sukhbir Sharma</h5>
-                        <p>Founder</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+<div class="team-subsection mb-5">
+   <h3 class="team-subsection-title">1. Founder</h3>
+   <p class="team-subsection-desc">Visionary behind the organization</p>
+
+   <div class="row align-items-center">
+      
+      <div class="col-md-4 d-flex">
+   <div class="team-card w-100 founder-img-card">
+      <a class="image-popup h-100 d-block" href="images/sukbir.jpg">
+         <img src="images/sukbir.jpg" alt="Pt. Sukhbir Sharma" class="img-fluid founder-img">
+      </a>
+      <div class="team-info text-center mt-2">
+         <h5>Pt. Sukhbir Sharma</h5>
+         <p>Founder</p>
+      </div>
+   </div>
+</div>
+
+    <!-- Right: Message -->
+<div class="col-md-8">
+   <div class="founder-message">
+      <h4 class="mb-3">Founder’s Message</h4>
+
+      <p>
+         Brahmin Organisation of India (BOI) is a vision to unite Brahmins across the world into a vibrant, collaborative, and purpose-driven community. Rooted in the timeless principles of arpan, samarpan, and tarpan, we aim to create a collective force that contributes meaningfully to society and inspires positive change.
+      </p>
+
+      <p>
+         For generations, Brahmins have been known for their wisdom and guidance—from sages like Agastya and Chanakya to modern thought leaders. Today, we carry forward that legacy with a renewed responsibility to inspire, guide, and empower the next generation in a rapidly evolving world.
+      </p>
+
+      <p>
+         Our mission is to preserve our rich Vedic heritage while building strong connections within the community. Together, we can learn, support one another, and create opportunities that shape a stronger and more united future.
+      </p>
+
+      <p>
+         Beyond knowledge, this organization is about belonging—coming together to share experiences, celebrate traditions, and stand united through every phase of life. When like-minded individuals unite with purpose, meaningful transformation becomes possible.
+      </p>
+
+      <blockquote class="mt-3 ps-3 border-start">
+         <em>
+            "Before you start some work, always ask yourself three questions – Why am I doing it, What the results might be, and Will I be successful."
+         </em>
+         <br>
+         
+      </blockquote>
+   </div>
+</div>
+   </div>
+</div>
 
          <!-- 2. Advisory Board Section -->
          <div class="team-subsection mb-5">
@@ -488,7 +544,7 @@
                   </div>
                </div>
 
-               <div class="col">
+               <!-- <div class="col">
                   <div class="team-card">
                      <a class="image-popup" href="images/Mr. Pankaj Kumar Sarma.png">
                         <img src="images/Mr. Pankaj Kumar Sarma.png" alt="Mr. Pankaj Kumar Sarma">
@@ -498,7 +554,7 @@
                         <p>Chairman, Intellectual Cell</p>
                      </div>
                   </div>
-               </div>
+               </div> -->
 
                <div class="col">
                   <div class="team-card">
@@ -1156,7 +1212,7 @@ Haryana</p>
                   </div>
                </div>
 
-               <div class="col">
+               <!-- <div class="col">
                   <div class="team-card">
                      <a class="image-popup" href="images/Mr. Pankaj Kumar Sarma.png">
                         <img src="images/Mr. Pankaj Kumar Sarma.png" alt="Mr. Pankaj Kumar Sarma">
@@ -1166,7 +1222,7 @@ Haryana</p>
                         <p>Member, Arts & Publications (BOI)</p>
                      </div>
                   </div>
-               </div>
+               </div> -->
 
               
 
