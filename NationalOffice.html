@@ -1,165 +1,235 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <link rel="stylesheet" type="text/css" href="css/off-canvas.css">
-    <link rel="stylesheet" type="text/css" href="fonts/linea-fonts.css">
-    <link rel="stylesheet" type="text/css" href="fonts/flaticon.css">
-    <link rel="stylesheet" type="text/css" href="inc/custom-slider/css/nivo-slider.css">
-    <link rel="stylesheet" type="text/css" href="inc/custom-slider/css/preview.css">
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/rsmenu-main.css">
-    <link rel="stylesheet" href="css/rsmenu-transitions.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <script src="https://kit.fontawesome.com/704a8664d3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/footer.css">
-    <style>
-        .a { padding: 10px; color: white; }
-        #contactform {
-            width: 300px;
-            left: -305px;
-            height: 515px;
-            margin: 32px 0;
-            position: fixed;
-            box-shadow: 0 0 12px 0 #333;
-            z-index: 999;
-            background-color: #1D1F20;
-            border-radius: 0 15px 15px 0;
-            border: 5px solid #666666;
-            border-left: none;
-        }
-        #contact-button {
-            width: 18%;
-            padding: 0;
-            cursor: pointer;
-            margin-left: 300px;
-            margin-top: 40px;
-            font-size: 23px;
-            color: white;
-            position: absolute;
-            background: none;
-        }
-        .rotated-text img {
-            height: 130px;
-            width: 130px;
-        }
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+   <link rel="stylesheet" type="text/css" href="css/slick.css">
+   <link rel="stylesheet" type="text/css" href="css/off-canvas.css">
+   <link rel="stylesheet" type="text/css" href="fonts/linea-fonts.css">
+   <link rel="stylesheet" type="text/css" href="fonts/flaticon.css">
+   <link rel="stylesheet" type="text/css" href="inc/custom-slider/css/nivo-slider.css">
+   <link rel="stylesheet" type="text/css" href="inc/custom-slider/css/preview.css">
+   <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/rsmenu-main.css">
+   <link rel="stylesheet" href="css/rsmenu-transitions.css">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" type="text/css" href="css/responsive.css">
+   <script src="https://kit.fontawesome.com/704a8664d3.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="./css/footer.css">
+   <style>
+      .a {
+         padding: 10px;
+         color: white;
+      }
 
-        /* Team Card Section */
-        .team-section {
-            background: #f8f9ff;
-            padding: 40px 0;
-            padding-bottom: 20px;
-        }
-        .team-section h2 {
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-        .team-card {
-            background: #ffffff;
-            border: 1px solid #e7e7e7;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 14px rgba(0,0,0,0.05);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            margin-bottom: 30px;
-        }
-        .team-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 9px 24px rgba(0,0,0,0.14);
-        }
-        .team-card img {
-            width: 100%;
-            height: 260px;
-            object-fit: cover;
-        }
-        .team-card .team-info {
-            padding: 18px;
-        }
-        .team-card .team-info h5 {
-            margin: 0 0 6px;
-            font-size: 1.05rem;
-            font-weight: 700;
-        }
-        .team-card .team-info p {
-            margin: 0;
-            color: #666;
-            font-size: 0.95rem;
-        }
+      #contactform {
+         width: 300px;
+         left: -305px;
+         height: 515px;
+         margin: 32px 0;
+         position: fixed;
+         box-shadow: 0 0 12px 0 #333;
+         z-index: 999;
+         background-color: #1D1F20;
+         border-radius: 0 15px 15px 0;
+         border: 5px solid #666666;
+         border-left: none;
+      }
 
-    </style>
+      #contact-button {
+         width: 18%;
+         padding: 0;
+         cursor: pointer;
+         margin-left: 300px;
+         margin-top: 40px;
+         font-size: 23px;
+         color: white;
+         position: absolute;
+         background: none;
+      }
+
+      .rotated-text img {
+         height: 130px;
+         width: 130px;
+      }
+
+      /* Team Card Section */
+      .team-section {
+         background: #f8f9ff;
+         padding: 40px 0;
+         padding-bottom: 20px;
+      }
+
+      .team-section h2 {
+         font-weight: 700;
+         margin-bottom: 20px;
+      }
+
+      .team-card {
+         background: #ffffff;
+         border: 1px solid #e7e7e7;
+         border-radius: 12px;
+         overflow: hidden;
+         box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+         text-align: center;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         margin-bottom: 30px;
+         width: 100%;
+      }
+
+      .team-card:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 9px 24px rgba(0, 0, 0, 0.14);
+      }
+
+      .team-card img {
+         width: 100%;
+         height: 210px;
+         object-fit: cover;
+      }
+
+      .team-card .team-info {
+         padding: 18px;
+         padding-bottom: 10px;
+         padding-top: 10px;
+      }
+
+      .team-card .team-info h5 {
+         margin: 0px;
+         font-size: 1.05rem;
+         font-weight: 700;
+      }
+
+      .team-card .team-info p {
+         margin: 0;
+         color: #666;
+         font-size: 0.95rem;
+      }
+
+      /* Team Subsection Styling */
+      .team-subsection {
+         border-bottom: 2px solid #f0f0f0;
+         padding-bottom: 40px;
+      }
+
+      .team-subsection-title {
+         font-size: 1.5rem;
+         font-weight: 700;
+         color: #333;
+         margin-bottom: 8px;
+         text-align: left;
+      }
+
+      .team-subsection-desc {
+         color: #888;
+         font-size: 0.95rem;
+         margin-bottom: 25px;
+         text-align: left;
+         font-weight: 500;
+      }
+
+      /* Force 1 card per row on mobile screens only (up to 768px) */
+      @media (max-width: 768px) {
+         .team-subsection .row {
+            --bs-columns: 1 !important;
+         }
+
+         .team-subsection .row .col {
+            flex: 0 0 100% !important;
+         }
+
+         /* Increase card height on mobile screens */
+         .team-card img {
+            height: 350px;
+         }
+      }
+
+      /* Ensure large screens maintain their layout */
+      @media (min-width: 992px) {
+         .team-subsection .row.row-cols-lg-5 {
+            --bs-columns: 5;
+         }
+
+         .team-subsection .row.row-cols-lg-5 .col {
+            flex: 0 0 calc(20% - (4 * 0.25rem) / 5);
+         }
+      }
+   </style>
 </head>
+
 <body class="defult-home">
-    
 
-    <!-- Top Social Bar -->
-      <div class="full-width-header top-social-bar">
-         <ul class="social-links-header" style="margin-bottom: 0; list-style: none; padding: 0;">
-            <li style="display: inline-block;">
-               <a href="https://www.facebook.com/BrahminOrgOfIndia/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
-               <a href="https://twitter.com/BrahminOrgIndia" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
-               <a href="https://www.instagram.com/brahminorgofindia" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>
-               <a href="https://www.youtube.com/channel/UC4uWXriky_c3rhwtsa1A28Q" target="_blank" rel="noopener"><i class="fa fa-youtube"></i></a>
-            </li>
-         </ul>
-      </div>
 
-    <!-- Header Area -->
-      <div class="full-width-header header-transparent">
-         <header id="rs-header" class="rs-header">
-            <div class="menu-area menu-sticky">
-               <div class="full-width-header">
-                  <div class="row">
-                     <div class="col-lg-3 col-md-12">
-                        <div class="logo-area">
-                           <a href="index.html">
+   <!-- Top Social Bar -->
+   <div class="full-width-header top-social-bar">
+      <ul class="social-links-header" style="margin-bottom: 0; list-style: none; padding: 0;">
+         <li style="display: inline-block;">
+            <a href="https://www.facebook.com/BrahminOrgOfIndia/" target="_blank" rel="noopener"><i
+                  class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/BrahminOrgIndia" target="_blank" rel="noopener"><i
+                  class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/brahminorgofindia" target="_blank" rel="noopener"><i
+                  class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC4uWXriky_c3rhwtsa1A28Q" target="_blank" rel="noopener"><i
+                  class="fa fa-youtube"></i></a>
+         </li>
+      </ul>
+   </div>
+
+   <!-- Header Area -->
+   <div class="full-width-header header-transparent">
+      <header id="rs-header" class="rs-header">
+         <div class="menu-area menu-sticky">
+            <div class="full-width-header">
+               <div class="row">
+                  <div class="col-lg-3 col-md-12">
+                     <div class="logo-area">
+                        <a href="index.html">
                            <img src="images/200.png" style="height: 55px;" alt="Brahmin Organisation of India Logo">
-                           </a>
-                        </div>
+                        </a>
                      </div>
-                     <div class="col-lg-9 col-md-12">
-                        <div class="main-menu">
-                           <a class="rs-menu-toggle"><i class="fa fa-bars"></i></a>
-                           <nav class="rs-menu">
-                              <ul class="nav-menu">
-                                 <li><a href="index.html">Home</a></li>
-                                 <li><a href="about.html">About Us</a></li>
-                                 <li><a href="NationalOffice.html">Core Team</a></li>
-                                 <li><a href="Gallery.html">Gallery</a></li>
-                                 <li><a href="media.html">Media</a></li>
-                                 <li><a href="news.html">News</a></li>
-                                 <li><a href="Contact.html">Contact</a></li>
-                              </ul>
-                           </nav>
-                        </div>
+                  </div>
+                  <div class="col-lg-9 col-md-12">
+                     <div class="main-menu">
+                        <a class="rs-menu-toggle"><i class="fa fa-bars"></i></a>
+                        <nav class="rs-menu">
+                           <ul class="nav-menu">
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="about.html">About Us</a></li>
+                              <li><a href="NationalOffice.html">Core Team</a></li>
+                              <li><a href="Gallery.html">Gallery</a></li>
+                              <li><a href="media.html">Media</a></li>
+                              <li><a href="news.html">News</a></li>
+                              <li><a href="Contact.html">Contact</a></li>
+                           </ul>
+                        </nav>
                      </div>
                   </div>
                </div>
             </div>
-           
-         </header>
-      </div>
+         </div>
 
-      <!-- Banner Section -->
-<section style="position: relative; height: 280px; overflow: hidden;">
-
-   <!-- Background -->
-   <div style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;">
-      <img src="images/banner/commonHero.png" alt="Banner"
-           style="width: 100%; height: 100%; object-fit: cover;">
-
-      <!-- Overlay -->
-      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5);"></div>
+      </header>
    </div>
 
-   <!-- Center Content -->
-   <div style="
+   <!-- Banner Section -->
+   <section style="position: relative; height: 280px; overflow: hidden;">
+
+      <!-- Background -->
+      <div style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;">
+         <img src="images/banner/commonHero.png" alt="Banner" style="width: 100%; height: 100%; object-fit: cover;">
+
+         <!-- Overlay -->
+         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5);">
+         </div>
+      </div>
+
+      <!-- Center Content -->
+      <div style="
         position: absolute;
         top: 55%;
         left: 50%;
@@ -169,33 +239,38 @@
         z-index: 2;
    ">
 
-      <h2 style="
+         <h2 style="
          color: #fff;
          font-size: 30px;
          font-weight: 600;
          margin: 10px;
          letter-spacing: 1px;
       ">
-         <a href="index.html" style="color: #fff; text-decoration: none;">
-            <span style="opacity: 0.8;">Home</span>
-         </a>
-         <span style="margin: 0 10px;">|</span>
-         <span>Core Team</span>
-      </h2>
+            <a href="index.html" style="color: #fff; text-decoration: none;">
+               <span style="opacity: 0.8;">Home</span>
+            </a>
+            <span style="margin: 0 10px;">|</span>
+            <span>Core Team</span>
+         </h2>
 
-   </div>
+      </div>
 
-</section>
+   </section>
 
-      <!-- Team Section -->
-      <section class="team-section">
-         <div class="container">
-            <div class="text-center mb-5 rs-title">
-               <h2 class="title">Our Core Team</h2>
-               <p>Meet the Brahmin Organisation of India leadership team (8 members).</p>
-            </div>
-            <div class="row">
-               <div class="col-lg-3 col-md-6">
+   <!-- Team Section -->
+   <section class="team-section">
+      <div class="container">
+         <div class="text-center mb-5 rs-title">
+            <h2 class="title">Our Organizational Structure</h2>
+            <p>Meet the Brahmin Organisation of India team members across various departments.</p>
+         </div>
+
+         <!-- 1. Founder Section -->
+         <div class="team-subsection mb-5">
+            <h3 class="team-subsection-title">1. Founder</h3>
+            <p class="team-subsection-desc">Visionary behind the organization</p>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-5 g-4">
+               <div class="col">
                   <div class="team-card">
                      <a class="image-popup" href="images/sukbir.jpg">
                         <img src="images/sukbir.jpg" alt="Pt. Sukhbir Sharma">
@@ -206,172 +281,1019 @@
                      </div>
                   </div>
                </div>
-               <div class="col-lg-3 col-md-6">
+            </div>
+         </div>
+
+         <!-- 2. Advisory Board Section -->
+         <div class="team-subsection mb-5">
+            <h3 class="team-subsection-title">2. Advisory Board</h3>
+            <p class="team-subsection-desc">Provides strategic guidance and direction</p>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-5 g-4">
+               <div class="col">
                   <div class="team-card">
-                     <a class="image-popup" href="images/ramesh.jpg">
-                        <img src="images/ramesh.jpg" alt="Pt. Ramesh Kitchloo">
+                     <a class="image-popup" href="images/Gen Manoj Pande.png">
+                        <img src="images/Gen Manoj Pande.png" alt="Gen Manoj Pande">
                      </a>
                      <div class="team-info">
+                        <h5>Gen Manoj Pande</h5>
+                        <p>(Retd) PVSM, AVSM, VSM,
+                           former Chief Of India Army</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Prof. P. B. Sharma.png">
+                        <img src="images/Prof. P. B. Sharma.png" alt="Prof. P. B. Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Prof. P. B. Sharma</h5>
+                        <p>Founder VC, DTU & RGPV</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Mousumi Chakraborty.png">
+                        <img src="images/Mousumi Chakraborty.png" alt="Mousumi Chakraborty">
+                     </a>
+                     <div class="team-info">
+                        <h5>Mousumi Chakraborty</h5>
+                        <p>DG, All India Radio</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Ranjan Mukherjee.png">
+                        <img src="images/Sh. Ranjan Mukherjee.png" alt="Sh. Ranjan Mukherjee">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Ranjan Mukherjee</h5>
+                        <p>VSM, IAF</p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. R N Sharma.png">
+                        <img src="images/Sh. R N Sharma.png" alt="Sh. R N Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. R N Sharma</h5>
+                        <p>IAS, Director Education, Delhi
+                           Administration</p>
+                     </div>
+                  </div>
+               </div> -->
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Mr. Anil Sharma.png">
+                        <img src="images/Mr. Anil Sharma.png" alt="Mr. Anil Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Mr. Anil Sharma</h5>
+                        <p>Chief Law Officer, MCD</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Prof. PR Trivedi.png">
+                        <img src="images/Prof. PR Trivedi.png" alt="Prof. PR Trivedi">
+                     </a>
+                     <div class="team-info">
+                        <h5>Prof. PR Trivedi</h5>
+                        <p>Chancellor of Universities</p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Prof. Murlimanohar Pathak.png">
+                        <img src="images/Prof. Murlimanohar Pathak.png" alt="Prof. Murlimanohar Pathak">
+                     </a>
+                     <div class="team-info">
+                        <h5>Prof. Murlimanohar Pathak</h5>
+                        <p>VC, Shri Lal Bahadur Shastri
+                           National Sanskrit University</p>
+                     </div>
+                  </div>
+               </div> -->
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Dhananjay Joshi.png">
+                        <img src="images/Dhananjay Joshi.png" alt="Dhananjay Joshi">
+                     </a>
+                     <div class="team-info">
+                        <h5>Dhananjay Joshi</h5>
+                        <p>Vice-Chancellor, Delhi
+                           Teacher University</p>
+                     </div>
+                  </div>
+               </div>
+
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Dr. Sudhakar Sharma.png">
+                        <img src="images/Dr. Sudhakar Sharma.png" alt="Dr. Sudhakar Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Dr. Sudhakar Sharma</h5>
+                        <p>Former Secretary,
+                           Lalit Kala Academy, GOI</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Mr. MP Sharma.png">
+                        <img src="images/Mr. MP Sharma.png" alt="Mr. MP Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Mr. MP Sharma</h5>
+                        <p>IRS (Retrd.)</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Prof. R K Khandal.png">
+                        <img src="images/Prof. R K Khandal.png" alt="Prof. R K Khandal">
+                     </a>
+                     <div class="team-info">
+                        <h5>Prof. R K Khandal</h5>
+                        <p>Former Vice Chancellor UPTU,
+                           (Currently President R&D Glycol Ltd)</p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Smt. Sonali sharma.png">
+                        <img src="images/Smt. Sonali sharma.png" alt="Smt. Sonali sharmaSharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Smt. Sonali sharma</h5>
+                        <p>Kathak Exponent</p>
+                     </div>
+                  </div>
+               </div> -->
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Prof. Padmakali Banerjee.png">
+                        <img src="images/Prof. Padmakali Banerjee.png" alt="Prof. Padmakali Banerjee">
+                     </a>
+                     <div class="team-info">
+                        <h5>Prof. Padmakali Banerjee</h5>
+                        <p>VC, IILM University</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Dr. Prateek Sharma.png">
+                        <img src="images/Dr. Prateek Sharma.png" alt="Dr. Prateek Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Dr. Prateek Sharma</h5>
+                        <p>VC, DTU</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Smt. Sulbha Joshi.png">
+                        <img src="images/Smt. Sulbha Joshi.png" alt="Smt. Sulbha Joshi">
+                     </a>
+                     <div class="team-info">
+                        <h5>Smt. Sulbha Joshi</h5>
+                        <p>Artist</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Mr. Pankaj Kumar Sarma.png">
+                        <img src="images/Mr. Pankaj Kumar Sarma.png" alt="Mr. Pankaj Kumar Sarma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Mr. Pankaj Kumar Sarma</h5>
+                        <p>Chairman, Intellectual Cell</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Mr. Piyush.jpeg">
+                        <img src="images/Mr. Piyush.jpeg" alt="Mr. Piyush">
+                     </a>
+                     <div class="team-info">
+                        <h5>Dr. Piyush Bhardwaj</h5>
+                        <p>Chairman, IT Cell</p>
+                     </div>
+                  </div>
+               </div>
+               
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Amit Dwivedi.png">
+                        <img src="images/Sh. Amit Dwivedi.png" alt="Sh. Amit Dwivedi">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Amit Dwivedi</h5>
+                        <p>Media Advisor, BY</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/CA Hemant Sharma.png">
+                        <img src="images/CA Hemant Sharma.png" alt="CA Hemant Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>CA Hemant Sharma</h5>
+                        <p>FCA, LLB, DISA
+                           Financial Advisor,</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Pt. Patanjali Soti.png">
+                        <img src="images/Pt. Patanjali Soti.png" alt="Pt. Patanjali Soti">
+                     </a>
+                     <div class="team-info">
+                        <h5>Pt. Patanjali Soti</h5>
+                        <p>Gerenal Secretary (BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Vijay Sharma.png">
+                        <img src="images/Sh. Vijay Sharma.png" alt="Sh. Vijay Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Vijay Sharma</h5>
+                        <p>Vice President, (BOI)
+                           Haryana State</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Kishori Lal Sharma.png">
+                        <img src="images/Sh. Kishori Lal Sharma.png" alt="Sh. Kishori Lal Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Kishori Lal Sharma</h5>
+                        <p>President (BOI) Himachal</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/user.jpg">
+                        <img src="images/user.jpg" alt="Sh. Yaduvender Salwan Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Yaduvender Salwan Sharma</h5>
+                        <p>President (BOI) Chandigarh</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Ajay Pandey.png">
+                        <img src="images/Sh. Ajay Pandey.png" alt="Sh. Ajay Pandey">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Ajay Pandey</h5>
+                        <p>President, Delhi Pradesh (BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Om Prakash Shastri.png">
+                        <img src="images/Sh. Om Prakash Shastri.png" alt="Sh. Om Prakash Shastri">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Om Prakash Shastri</h5>
+                        <p>Vice President, (BOI)
+                           Delhi State</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/user.jpg">
+                        <img src="images/user.jpg" alt="Sh. Mahesh Kaushik">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Mahesh Kaushik</h5>
+                        <p>Vice President (BOI) Delhi State</p>
+                     </div>
+                  </div>
+               </div>
+
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Ravinder Sharma.png">
+                        <img src="images/Sh. Ravinder Sharma.png" alt="Sh. Ravinder Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Ravinder Sharma</h5>
+                        <p>President (BOI) Punjab</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Deepak Kaushal.png">
+                        <img src="images/Sh. Deepak Kaushal.png" alt="Sh. Deepak Kaushal">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Deepak Kaushal</h5>
+                        <p>Vice President, (BOI), Uttar
+                           Pradesh</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Smt. Anil Paliwal.png">
+                        <img src="images/Smt. Anil Paliwal.png" alt="Smt. Anil Paliwal">
+                     </a>
+                     <div class="team-info">
+                        <h5>Smt. Anil Paliwal</h5>
+                        <p>President, (BOI), Mahila Wing
+                           Uttar Pradesh</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Karamveer Atri.png">
+                        <img src="images/Sh. Karamveer Atri.png" alt="Sh. Karamveer Atri">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Karamveer Atri</h5>
+                        <p>Secretary (BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Subhash Sharma.png">
+                        <img src="images/Sh. Subhash Sharma.png" alt="Sh. Subhash Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Subhash Sharma</h5>
+                        <p>Vice President (BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Mrs. Neelam Parasar.png">
+                        <img src="images/Mrs. Neelam Parasar.png" alt="Mrs. Neelam Parasar">
+                     </a>
+                     <div class="team-info">
+                        <h5>Mrs. Neelam Parasar</h5>
+                        <p>President, Women Wing,
+                           BOI, Delhi Pradesh</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Smt. Renu Sharma.png">
+                        <img src="images/Smt. Renu Sharma.png" alt="Smt. Renu Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Smt. Renu Sharma</h5>
+                        <p>Vice President, Woman Wing
+                           (BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Surendra Shama.png">
+                        <img src="images/Sh. Surendra Shama.png" alt="Sh. Surendra Shama">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Surendra Shama,
+                           Advocate</h5>
+                        <p>President (BOI), Haryana</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/user.jpg">
+                        <img src="images/user.jpg" alt="Sh. Manish Kumar">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Manish Kumar</h5>
+                        <p>President (BOI), Youth Wingh,
+Haryana</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Bhupender Sharma.png">
+                        <img src="images/Sh. Bhupender Sharma.png" alt="Sh. Bhupender Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Bhupender Sharma</h5>
+                        <p>Youth Wingh (BOI), Delhi
+                        </p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Ravinder Rao Kulkarni.png">
+                        <img src="images/Sh. Ravinder Rao Kulkarni.png" alt="Sh. Ravinder Rao Kulkarni">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Ravinder Rao Kulkarni</h5>
+                        <p>President Karnataka (BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Chandrashekhar.png">
+                        <img src="images/Sh. Chandrashekhar.png" alt="Sh. Chandrashekhar">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Chandrashekhar</h5>
+                        <p>Secretary (BOI)
+                           Karnataka State</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Nagabhushan.png">
+                        <img src="images/Sh. Nagabhushan.png" alt="Sh. Nagabhushan">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Nagabhushan</h5>
+                        <p>Secretary, Mysore, BOI</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Mohan K.png">
+                        <img src="images/Sh. Mohan K.png" alt="Sh. Mohan Kumar">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Mohan K</h5>
+                        <p>Secretary (BOI) Karnataka State</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Smt. Madhura Mohanrao Karnam.png">
+                        <img src="images/Smt. Madhura Mohanrao.png" alt="Smt. Madhura Mohanrao Karnam">
+                     </a>
+                     <div class="team-info">
+                        <h5>Smt. Madhura Mohanrao
+                           Karnam</h5>
+                        <p>President, Womn Wing,
+                           BOI Karnataka State</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Smt. Priya Ashok Puranik.png">
+                        <img src="images/Smt. Priya Ashok Puranik.png" alt="Smt. Priya Ashok Puranik">
+                     </a>
+                     <div class="team-info">
+                        <h5>Smt. Priya Ashok Puranik</h5>
+                        <p>Vice President, Woman Wing,
+                           BOI Karnataka</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Mr. Vijayendra Joshi.png">
+                        <img src="images/Mr. Vijayendra Joshi.png" alt="Mr. Vijayendra Joshi">
+                     </a>
+                     <div class="team-info">
+                        <h5>Mr. Vijayendra Joshi</h5>
+                        <p>Secretary (BOI) Karnataka State</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Gopalkrishna Tatti.png">
+                        <img src="images/Sh. Gopalkrishna Tatti.png" alt="Sh. Gopalkrishna Tatti">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Gopalkrishna Tatti</h5>
+                        <p>State Vice President (BOI)
+                           Karnataka</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Manish Dabholkar.png">
+                        <img src="images/Sh. Manish Dabholkar.png" alt="Sh. Manish Dabholkar">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Manish Dabholkar</h5>
+                        <p>President, (BOI)
+                           Maharashtra State</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Smt. Vinita Sharma.png">
+                        <img src="images/Smt. Vinita Sharma.png" alt="Smt. Vinita Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Smt. Vinita Sharma</h5>
+                        <p>President, Woman Wing (BOI)
+                           Maharashtra State</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Pt. Parashram Shama.png">
+                        <img src="images/Pt. Parashram Shama.png" alt="Pt. Parashram Shama">
+                     </a>
+                     <div class="team-info">
+                        <h5>Pt. Parashram Shama</h5>
+                        <p>Vice President (BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/user.jpg">
+                        <img src="images/user.jpg" alt="Sh. Sanjay Saraf">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Sanjay Saraf</h5>
+                        <p>Vice President (BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Pt. Prem Shukla.png">
+                        <img src="images/Pt. Prem Shukla.png" alt="Pt. Prem Shukla">
+                     </a>
+                     <div class="team-info">
+                        <h5>Pt. Prem Shukla</h5>
+                        <p>Organizin Secretary(BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Nirdesh Shama.png">
+                        <img src="images/Sh. Nirdesh Shama.png" alt="Sh. Nirdesh Shama">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Nirdesh Shama</h5>
+                        <p>Chairman, Sports Cell (BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Bhagwat Prasad Sharma.png">
+                        <img src="images/Sh. Bhagwat Prasad Sharma.png" alt="Sh. Bhagwat Prasad Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Bhagwat Prasad Sharma</h5>
+                        <p>Chairman, Sports Cell (BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/user.jpg">
+                        <img src="images/user.jpg" alt="Sh. Sanjay Saraf">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Sanjay Saraf</h5>
+                        <p>Vice President (BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Smt. Princy Bhatt.png">
+                        <img src="images/Smt. Princy Bhatt.png" alt="Smt. Princy Bhatt">
+                     </a>
+                     <div class="team-info">
+                        <h5>Smt. Princy Bhatt</h5>
+                        <p>Vice President, Woman Cell,
+                           J&K</p>
+                     </div>
+                  </div>
+               </div>
+
+
+
+            </div>
+         </div>
+
+         <!-- 3. Core Team (Leadership) Section -->
+         <div class="team-subsection mb-5">
+            <h3 class="team-subsection-title">3. Core Team (Leadership)</h3>
+            <p class="team-subsection-desc">Leads operations and execution</p>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-5 g-4">
+               <!-- 5th Member -->
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Smt. Mamta Sharma.png">
+                        <img src="images/Smt. Mamta Sharma.png" alt="Smt. Mamta Sharma" class="img-fluid">
+                     </a>
+                     <div class="team-info text-center">
+                        <h5>Smt. Mamta Sharma</h5>
+                        <p>President (WC)</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/ramesh.jpg">
+                        <img src="images/ramesh.jpg" alt="Pt. Ramesh Kitchloo" class="img-fluid">
+                     </a>
+                     <div class="team-info text-center">
                         <h5>Pt. Ramesh Kitchloo</h5>
                         <p>President</p>
                      </div>
                   </div>
                </div>
-               <div class="col-lg-3 col-md-6">
+
+               <div class="col">
                   <div class="team-card">
                      <a class="image-popup" href="images/ravi.jpg">
-                        <img src="images/ravi.jpg" alt="Dr. Ravi Dutt Gaur">
+                        <img src="images/ravi.jpg" alt="Dr. Ravi Dutt Gaur" class="img-fluid">
                      </a>
-                     <div class="team-info">
+                     <div class="team-info text-center">
                         <h5>Dr. Ravi Dutt Gaur</h5>
                         <p>General Secretary</p>
                      </div>
                   </div>
                </div>
-               <div class="col-lg-3 col-md-6">
+
+               <div class="col">
                   <div class="team-card">
                      <a class="image-popup" href="images/kuldeep.jpg">
-                        <img src="images/kuldeep.jpg" alt="Dr Kuldeep Sharma">
+                        <img src="images/kuldeep.jpg" alt="Dr Kuldeep Sharma" class="img-fluid">
                      </a>
-                     <div class="team-info">
+                     <div class="team-info text-center">
                         <h5>Dr Kuldeep Sharma</h5>
                         <p>General Secretary</p>
                      </div>
                   </div>
                </div>
-               <div class="col-lg-3 col-md-6">
+
+               <div class="col">
                   <div class="team-card">
                      <a class="image-popup" href="images/goswami.jpg">
-                        <img src="images/goswami.jpg" alt="Goswami S.K. Puri">
+                        <img src="images/goswami.jpg" alt="Goswami S.K. Puri" class="img-fluid">
                      </a>
-                     <div class="team-info">
+                     <div class="team-info text-center">
                         <h5>Goswami S.K. Puri</h5>
                         <p>Treasurer</p>
                      </div>
                   </div>
                </div>
-               <!-- <div class="col-lg-3 col-md-6">
+
+
+
+            </div>
+         </div>
+
+         <!-- 4. Legal Advisory Team Section -->
+         <div class="team-subsection mb-5">
+            <h3 class="team-subsection-title">4. Legal Advisory Team</h3>
+            <p class="team-subsection-desc">Handles legal guidance and compliance</p>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-5 g-4">
+               <div class="col">
                   <div class="team-card">
-                     <a class="image-popup" href="images/Azad.jpg">
-                        <img src="images/Azad.jpg" alt="Pt. Azad Atri,Advocate">
+                     <a class="image-popup" href="images/Mr. Anil Sharma.png">
+                        <img src="images/Mr. Anil Sharma.png" alt="Mr. Anil Sharma">
                      </a>
                      <div class="team-info">
-                        <h5>Pt. Azad Atri,Advocate</h5>
-                        <p>Chief Patron</p>
-                     </div>
-                  </div>
-               </div> -->
-               <!-- <div class="col-lg-3 col-md-6">
-                  <div class="team-card">
-                     <a class="image-popup" href="images/team/19.jpg">
-                        <img src="images/team/19.jpg" alt="Dr. Meenakshi Nair">
-                     </a>
-                     <div class="team-info">
-                        <h5>Dr. Meenakshi Nair</h5>
-                        <p>Education Director</p>
+                        <h5>Mr. Anil Sharma</h5>
+                        <p>Chief Law Officer, MCD</p>
                      </div>
                   </div>
                </div>
-               <div class="col-lg-3 col-md-6">
+
+               <div class="col">
                   <div class="team-card">
-                     <a class="image-popup" href="images/team/1.jpg">
-                        <img src="images/team/1.jpg" alt="Shri Vivek Kumar">
+                     <a class="image-popup" href="images/Kush Sharma.png">
+                        <img src="images/Kush Sharma.png" alt="Mr. Kush Sharma">
                      </a>
                      <div class="team-info">
-                        <h5>Shri Vivek Kumar</h5>
-                        <p>Events Coordinator</p>
+                        <h5>Mr. Kush Sharma</h5>
+                        <p>Advocate (BOI)</p>
                      </div>
                   </div>
-               </div> -->
+               </div>
             </div>
          </div>
-      </section>
 
-        <!-- Footer -->
-<footer id="rs-footer">
-   <div class="container" style="max-width:1200px;margin:auto;padding:40px 20px 0px">
-      <div class="row">
-         <!-- Column 1 -->
-         <div class="col-lg-3 col-md-6 mb-4">
-            <img src="images/logo.png" style="height:55px;margin-bottom:15px;" alt="BOI Logo">
-            <p>
-               Preserving the Vedic identity and empowering the global Brahmin
-               community through education, service and collaboration.
-            </p>
+         <!-- 5. IT Cell Section -->
+         <div class="team-subsection mb-5">
+            <h3 class="team-subsection-title">5. IT Cell</h3>
+            <p class="team-subsection-desc">Manages technology and development</p>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-5 g-4">
+              <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Mr. Piyush.jpeg">
+                        <img src="images/Mr. Piyush.jpeg" alt="Mr. Piyush">
+                     </a>
+                     <div class="team-info">
+                        <h5>Dr. Piyush Bhardwaj</h5>
+                        <p>Chairman, IT Cell</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/user.jpg">
+                        <img src="images/user.jpg" alt="Mr. Ashish Jain">
+                     </a>
+                     <div class="team-info">
+                        <h5>Mr. Ashish Jain</h5>
+                        <p>Member, IT Cell</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Mr. Aniket Mishra.png">
+                        <img src="images/Mr. Aniket Mishra.png" alt="Mr. Aniket Mishra">
+                     </a>
+                     <div class="team-info">
+                        <h5>Mr. Aniket Mishra</h5>
+                        <p>Member, IT Cell</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Mr. Nishant.png">
+                        <img src="images/Mr. Nishant.png" alt="Mr. Nishant">
+                     </a>
+                     <div class="team-info">
+                        <h5>Mr. Nishant</h5>
+                        <p>Member, IT Cell</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
-         <!-- Column 2 -->
-         <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="footer-heading">Quick Links</h5>
-            <ul class="footer-menu">
-               <li><a href="index.html">Home</a></li>
-               <li><a href="about.html">About Us</a></li>
-               <li><a href="gallery.html">Gallery</a></li>
-               <li><a href="news.html">News</a></li>
-            </ul>
+
+         <!-- 6. Arts & Publications Section -->
+         <div class="team-subsection mb-5">
+            <h3 class="team-subsection-title">6. Arts & Publications</h3>
+            <p class="team-subsection-desc">Oversees creative content and publications</p>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-5 g-4">
+
+                <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Dr. Sudhakar Sharma.png">
+                        <img src="images/Dr. Sudhakar Sharma.png" alt="Dr. Sudhakar Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Dr. Sudhakar Sharma</h5>
+                        <p>Chairman, Arts & Publications (BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+                <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Amit Dwivedi.png">
+                        <img src="images/Sh. Amit Dwivedi.png" alt="Sh. Amit Dwivedi">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Amit Dwivedi</h5>
+                        <p>Member, Arts & Publications (BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Mr. Pankaj Kumar Sarma.png">
+                        <img src="images/Mr. Pankaj Kumar Sarma.png" alt="Mr. Pankaj Kumar Sarma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Mr. Pankaj Kumar Sarma</h5>
+                        <p>Member, Arts & Publications (BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+              
+
+               
          </div>
-         <!-- Column 3 -->
-         <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="footer-heading">Resources</h5>
-            <ul class="footer-menu">
-               <li><a href="privacy-policy.html">Privacy Policy</a></li>
-               <li><a href="terms.html">Terms of Service</a></li>
-               <li><a href="volunteer.html">Volunteer</a></li>
-               <li><a href="donate.html">Donate Now</a></li>
-            </ul>
+
+         <!-- 7. Sports Section -->
+         <div class="team-subsection mb-5">
+            <h3 class="team-subsection-title">7. Sports</h3>
+            <p class="team-subsection-desc">Manages sports-related activities and events</p>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-5 g-4">
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Nirdesh Shama.png">
+                        <img src="images/Sh. Nirdesh Shama.png" alt="Sh. Nirdesh Shama">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Nirdesh Shama</h5>
+                        <p>Chairman, Sports Cell (BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col">
+                  <div class="team-card">
+                     <a class="image-popup" href="images/Sh. Bhagwat Prasad Sharma.png">
+                        <img src="images/Sh. Bhagwat Prasad Sharma.png" alt="Sh. Bhagwat Prasad Sharma">
+                     </a>
+                     <div class="team-info">
+                        <h5>Sh. Bhagwat Prasad Sharma</h5>
+                        <p>Chairman, Sports Cell (BOI)</p>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
          </div>
-         <!-- Column 4 -->
-         <div class="col-lg-3 col-md-6 mb-4">
-            <h5 class="footer-heading">Connect</h5>
-            <p style="margin-bottom: 0;">
-               Unit of Bhagwan Parshuram Brahmin Charitable Trust
-            </p>
-            <p >
-               Email:
-               <a href="mailto:Boindia18@gmail.com">Boindia18@gmail.com</a>
-            </p>
-            <a href="contact.html" class="footer-btn">
-               Contact Us
-            </a>
+
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer id="rs-footer">
+      <div class="container" style="max-width:1200px;margin:auto;padding:40px 20px 0px">
+         <div class="row">
+            <!-- Column 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+               <img src="images/logo.png" style="height:55px;margin-bottom:15px;" alt="BOI Logo">
+               <p>
+                  Preserving the Vedic identity and empowering the global Brahmin
+                  community through education, service and collaboration.
+               </p>
+            </div>
+            <!-- Column 2 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+               <h5 class="footer-heading">Quick Links</h5>
+               <ul class="footer-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="news.html">News</a></li>
+               </ul>
+            </div>
+            <!-- Column 3 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+               <h5 class="footer-heading">Resources</h5>
+               <ul class="footer-menu">
+                  <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="volunteer.html">Volunteer</a></li>
+                  <li><a href="donate.html">Donate Now</a></li>
+               </ul>
+            </div>
+            <!-- Column 4 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+               <h5 class="footer-heading">Connect</h5>
+               <p style="margin-bottom: 0;">
+                  Unit of Bhagwan Parshuram Brahmin Charitable Trust
+               </p>
+               <p>
+                  Email:
+                  <a href="mailto:Boindia18@gmail.com">Boindia18@gmail.com</a>
+               </p>
+               <a href="contact.html" class="footer-btn">
+                  Contact Us
+               </a>
+
+            </div>
 
          </div>
 
       </div>
 
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+         <p>
+            © 2026 Brahmin Organisation of India. All Rights Reserved.
+         </p>
+      </div>
+
+   </footer>
+
+   <!-- Scroll Up -->
+   <div id="scrollUp">
+      <i class="fa fa-angle-up"></i>
    </div>
 
-
-   <!-- Bottom -->
-   <div class="footer-bottom">
-      <p>
-         © 2026 Brahmin Organisation of India. All Rights Reserved.
-      </p>
-   </div>
-
-</footer>
-
-    <!-- Scroll Up -->
-    <div id="scrollUp">
-        <i class="fa fa-angle-up"></i>
-    </div>
-
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/rsmenu-main.js"></script>
-    <script src="js/jquery.nav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/skill.bars.jquery.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.mb.YTPlayer.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="inc/custom-slider/js/jquery.nivo.slider.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/contact.form.js"></script>
-    <script src="js/main.js"></script>
+   <!-- Scripts -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/rsmenu-main.js"></script>
+   <script src="js/jquery.nav.js"></script>
+   <script src="js/owl.carousel.min.js"></script>
+   <script src="js/slick.min.js"></script>
+   <script src="js/isotope.pkgd.min.js"></script>
+   <script src="js/imagesloaded.pkgd.min.js"></script>
+   <script src="js/wow.min.js"></script>
+   <script src="js/skill.bars.jquery.js"></script>
+   <script src="js/jquery.counterup.min.js"></script>
+   <script src="js/waypoints.min.js"></script>
+   <script src="js/jquery.mb.YTPlayer.min.js"></script>
+   <script src="js/jquery.magnific-popup.min.js"></script>
+   <script src="inc/custom-slider/js/jquery.nivo.slider.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/contact.form.js"></script>
+   <script src="js/main.js"></script>
 </body>
+
 </html>
